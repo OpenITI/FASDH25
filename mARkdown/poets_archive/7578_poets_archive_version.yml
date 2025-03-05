@@ -9,8 +9,9 @@
     use consistently)
 90#VERS#COMMENT##: This text was OCR'ed as part of the Text-Based Digital
     Humanities course at the Faculty of Arts and Sciences, Aga Khan University,
-    Karachi, in Spring 2025.
-    This file was created on 2025-03-04 11:34:59 UTC by eScriptorium version 0.13.8
+    Karachi, in Spring 2025. The goal was to learn to train an OCR model. OCR output
+    will not be perfect.
+    This file was created on 2025-03-05 13:36:38 UTC by eScriptorium version 0.13.8
     Transcription model used: FASDH25_transcription
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: UNCORRECTED_OCR

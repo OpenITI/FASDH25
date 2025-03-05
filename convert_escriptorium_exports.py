@@ -1246,7 +1246,8 @@ if __name__ == "__main__":
        }
    tsv_d = get_tsv_metadata(meta_fp, first_row=1, last_row=20, coll_id="FASDH",
                             default_transcription_layer="FASDH25_transcription")
-   convert_folder_of_zips(zips_folder, outfolder, tsv_d,
+   for zips_folder in [ "corrected_exports", "exports"]:
+       convert_folder_of_zips(zips_folder, outfolder, tsv_d,
                           include_regions=["MainZone", "Main", "text"],
                           transcription_meta=transcription_meta,
                           main_text_region="MainZone")

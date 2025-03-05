@@ -1,17 +1,17 @@
 00#VERS#CLENGTH##:
 00#VERS#LENGTH###:
 00#VERS#URI######: 
-80#VERS#BASED####: NOT_FOUND
+80#VERS#BASED####: https://search.worldcat.org/title/40710171
 80#VERS#COLLATED#: permalink, permalink, permalink
-80#VERS#LINKS####: Umrao Jaan Ada By Mirza Haadi Ruswa (UrduReadings.com).pdf -
-    Google Drive
+80#VERS#LINKS####: https://ia801905.us.archive.org/9/items/ji-han-pite-hain-
+    shaukat-thanvi/Ji-Han-pite-hain_Shaukat-Thanvi.pdf
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please
     use consistently)
 90#VERS#COMMENT##: This text was OCR'ed as part of the Text-Based Digital
     Humanities course at the Faculty of Arts and Sciences, Aga Khan University,
     Karachi, in Spring 2025. The goal was to learn to train an OCR model. OCR output
     will not be perfect.
-    This file was created on 2025-03-05 13:36:41 UTC by eScriptorium version 0.13.8
+    This file was created on 2025-03-05 13:36:43 UTC by eScriptorium version 0.13.8
     Transcription model used: FASDH25_transcription
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: UNCORRECTED_OCR
