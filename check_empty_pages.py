@@ -15,7 +15,7 @@ for folder in os.listdir(start):
             text = file.read()
             n_pages = len(re.findall("PageV", text))
             n_empty = len(re.findall("!\[image filename.+[\n#~ ]+Page", text))
-        if n_empty > -1:
+        if n_empty > 2:
             print(fp)
             print(f"{n_empty}/{n_pages} pages empty")
             

@@ -3,15 +3,16 @@
 00#VERS#URI######: 
 80#VERS#BASED####: NOT_FOUND
 80#VERS#COLLATED#: permalink, permalink, permalink
-80#VERS#LINKS####: https://www.rekhtadownload.com/ebooks/bagh-o-bahar-mir-amman-
-    ebooks-2
+80#VERS#LINKS####:
+    https://drive.google.com/file/d/1JjKn6ZDJwaYPuoJIBlvBVp7P-7qd1hxr/view?usp=sharing
+    https://drive.google.com/file/d/1zSN_l0vrUIE8C_43DbA6Ior6pB9lKjr_/view?usp=drivesdk
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please
     use consistently)
 90#VERS#COMMENT##: This text was OCR'ed as part of the Text-Based Digital
     Humanities course at the Faculty of Arts and Sciences, Aga Khan University,
     Karachi, in Spring 2025. The goal was to learn to train an OCR model. OCR output
     will not be perfect.
-    This file was created on 2025-03-05 22:54:27 UTC by eScriptorium version 0.13.8
+    This file was created on 2025-03-05 22:54:28 UTC by eScriptorium version 0.13.8
     Transcription model used: FASDH25_transcription
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: UNCORRECTED_OCR

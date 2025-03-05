@@ -1081,7 +1081,7 @@ def get_tsv_metadata(meta_fp, first_row=1, last_row=1000, coll_id="FASDH",
 
 
             # store the metadata from the tsv file in a dictonary:
-            key = re.sub("[\W_s]+", "", submitter).lower()
+            key = re.sub(r"[\W_s]+", "", submitter).lower()
             tsv_d[key] = {
                 "version_yml": version_yml,
                 "book_yml": book_yml,
@@ -1204,7 +1204,7 @@ def convert_folder_of_zips(zips_folder, outfolder, tsv_d, include_regions=[],
                             transcription_meta=transcription_meta,
                             main_text_region=main_text_region)
                 # write the yml files:
-                key = re.sub("[\W_s]+", "", group_name).lower()
+                key = re.sub(r"[\W_s]+", "", group_name).lower()
                 try:
                     with open(outfp+"_author.yml", mode="w", encoding="utf-8") as file:
                         file.write(tsv_d[key]["author_yml"])
@@ -1235,6 +1235,9 @@ if __name__ == "__main__":
         "Atiya Kiyani",   # programmer
         "Amjad AliShah",  # programmer
         "Amjad Alishah",  # programmer
+        "Didar Ali",          # bachelors
+        "Syed AzharUddin",    # bachelors
+        "Ihtisham AliHassan"  # bachelors
        }
 
    zips_folder = "exports"
