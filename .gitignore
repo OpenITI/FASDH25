@@ -4,6 +4,7 @@
 # exclude xml folders:
 exports/
 corrected_exports/
+late/
 
 # files for which a corrected version exists:
 mARkdown/zirafa/7577_zirafa*
