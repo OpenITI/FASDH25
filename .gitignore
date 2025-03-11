@@ -10,3 +10,6 @@ late/
 mARkdown/zirafa/7577_zirafa*
 mARkdown/the_middle_ground/
 mARkdown/programmer/7587_programmer*
+
+# ignore temporary Kate files:
+**/*.kate-swp
