@@ -1,3 +1,7 @@
 This is a test file.
 Hopefully we will not get a merge error.
+<<<<<<< HEAD
 Peter changed this in Karachi.
+=======
+Mathew changed this file, in London.
+>>>>>>> 70658d9507bdda551cbccdbe2f899641e8ed79e9
