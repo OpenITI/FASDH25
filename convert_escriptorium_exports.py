@@ -1240,8 +1240,6 @@ if __name__ == "__main__":
         "Ihtisham AliHassan"  # bachelors
        }
 
-   zips_folder = "exports"
-   zips_folder = "corrected_exports"
    outfolder = "mARkdown"
    transcription_meta = {
        "transcription model": "FASDH25_transcription.mlmodel",
@@ -1249,7 +1247,9 @@ if __name__ == "__main__":
        }
    tsv_d = get_tsv_metadata(meta_fp, first_row=1, last_row=20, coll_id="FASDH",
                             default_transcription_layer="FASDH25_transcription")
-   for zips_folder in [ "corrected_exports", "exports"]:
+   all_folders = ["corrected_exports", "exports"]
+   all_folders = ["late"]
+   for zips_folder in all_folders:
        convert_folder_of_zips(zips_folder, outfolder, tsv_d,
                           include_regions=["MainZone", "Main", "text"],
                           transcription_meta=transcription_meta,

@@ -27,8 +27,11 @@ If the output does not contain your email address, please provide your GitHub us
 
 ```
 git config --global user.name "your_github_username"
-$ git config --global user.email "your_email_address"
+git config --global user.email "your_email_address"
 ```
+
+(make sure to replace "your_github_username" with the username of your personal GitHub account and "your_email_address" with the email address that you created your GitHub account with)
+
 
 -----
 
