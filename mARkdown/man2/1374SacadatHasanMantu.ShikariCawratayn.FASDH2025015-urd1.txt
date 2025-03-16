@@ -1484,20 +1484,6 @@ PageV01P069
 ~~"تو لعنت ہے ایسی دواپر۔
 
 PageV01P070
-######OpenITI#
-
-#META# Creator: escriptorium
-#META# Created: 2025-03-05T16:53:20.129302+00:00
-#META# LastChange: 2025-03-05T16:53:20.129329+00:00
-#META# transcription model: FASDH25_transcription.mlmodel
-#META# segmentation model: urdu_segm_fas25.mlmodel
-#META# transcribers: man2
-#META# Escriptorium document pk: 7596
-
-#META#Header#End#
-
-
-PageV01P070
 
 ![image filename](./شکاری_عورتیں_سعادت_حسن_منٹو.pdf_page_71.png)
 ### | حج اکبر
