@@ -1,15 +1,3 @@
-######OpenITI#
-
-#META# Creator: escriptorium
-#META# Created: 2025-03-05T11:42:53.754749+00:00
-#META# LastChange: 2025-03-05T11:42:53.754782+00:00
-#META# transcription model: FASDH25_transcription.mlmodel
-#META# segmentation model: urdu_segm_fas25.mlmodel
-#META# transcribers: ji_han_pite_hain_jhph
-#META# Escriptorium document pk: 7593
-
-
-#META#Header#End#
 
 
 
@@ -256,7 +244,7 @@ PageV01P083
 PageV01P084
 
 ![image filename](./Ji-Han-pite-hain_Shaukat-Thanvi.pdf_page_85.png)
-
+### | جی ہاں، پٹے ہیں
 # عاشقی میں تو خرعزت مسادات تنک چلی جاتی ہہے امد اص طرح کہ گریا کرلا
 ~~بات ہہ نہس۔ لیکن اب معلوم یہ ہتوتا ہمے کہ عزراح لنگارا میں بھی ناک کا
 ~~جوڑسے صافت ہوجانا کولی عنر نمدلی بات بنہ رہے گگی ادر دافعی جبب خوہزاہح
@@ -517,7 +505,7 @@ PageV01P095
 PageV01P096
 
 ![image filename](./Ji-Han-pite-hain_Shaukat-Thanvi.pdf_page_97.png)
-
+### | آسیب!
 # ہن لگے۔"آسی
 # ہم نے مرض کیا جی ہاں آکصیب والبتہ اکیب۔
 # کہنے لگے۔"ہٹ
@@ -784,7 +772,7 @@ PageV01P108
 
 ![image filename](./Ji-Han-pite-hain_Shaukat-Thanvi.pdf_page_109.png)
 
-# 
+### | "ایک ملازم کی ضرورت ہے"
 # حی باں۔ ایک ملازم کی صرمدت ہے۔ جس کے لیے پہلے بوبہت سی
 ~~شرلیی تھیں کہ ذرا معقول مسم کا کھانا پکانا جانتا ہو۔ ایمانہ ارہو۔ ص
 ~~ستھری عاوتیں ہہوں۔ اسس کی زبان ددانہہ ہو۔ لسسی نستہ کا عافییا نے ہو
@@ -1147,6 +1135,7 @@ PageV01P124
 
 ![image filename](./Ji-Han-pite-hain_Shaukat-Thanvi.pdf_page_125.png)
 
+### | "بیری اور ڈھیلے"
 # جبس ٹھربیں بیری ہوئی سہلے۔ اس بیںزتمیلے آے ہھیا ہی:۔
 # حنا ح یہ جواپ نہنایت اطمنات سے رضھہ حسات بنی تییھی ہہیں افد
 ~~انک نرمانہ میں بہایت سشتدمہ صسم کے بیری رھے حکی ہلیں۔ جین کے ليے اس
@@ -1367,6 +1356,7 @@ PageV01P134
 
 ![image filename](./Ji-Han-pite-hain_Shaukat-Thanvi.pdf_page_135.png)
 
+### | دوزخ
 # (دیھازہ پر کوئی آہسقہ ہے دمتک ہیتا ہےی
 ~~تیخ صاحب ہہ کوت ہے۔ معلوم ہے سب کوک کج میرا خسضاب کا وق ہے اور
 # یہ بھی محلوم جہے کہ میں خضاب کے وت کسسی سے انس مطقا۔ پھرچھی
