@@ -22,7 +22,7 @@ in these articles.
 # Task 0. Open a single article :
 
 folder = "aljazeera_articles"
-filename = "2024-04-18_406.txt"
+filename = "2024-03-28_9276.txt"
 
 # EXERCISE: use an f string to combine the folder and filename variables into a path
 #           (remember: a path uses slashes "/" to separate file and folder names)
