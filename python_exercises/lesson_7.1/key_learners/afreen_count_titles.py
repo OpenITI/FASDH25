@@ -1,19 +1,19 @@
-filename= "afreen.txt"
+filename = "1225MirTqyMir.DianMir.FASDH2025018-urd1_7595_key_learners.txt"
 with open(filename, 'r', encoding='utf8') as file:
     lines = file.readlines()
+
 matching_lines = []
 for heading in lines:
-     if "###" in heading:
-         matching_lines.append(heading)
-
+    if '###' in heading:
+        matching_lines.append(heading)
 for heading in matching_lines[:3]:
-     print(heading)
-
-word_counts = []  # To store count of words per matching line.
+    print(heading)
+word_counts = []
 for heading in matching_lines:
     print("\nCurrent heading:", heading)
-    words = heading.split()  # Split the line into words.
-     # Count the words in the final list and store it.
+    words = heading.split()
     count_words = len(words)
     print("Count of words in this line:", count_words)
-     
+    word_counts.append(count_words)
+    for word in words:
+        print(len(word))
