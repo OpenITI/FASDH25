@@ -1,4 +1,4 @@
-filename = "1225MirTqyMir.DianMir.FASDH2025018-urd1_7595_key_learners.txt"
+filename = "1225MirTqyMir.DianMir.FASDH2025018-urd1.txt"
 with open(filename, 'r', encoding='utf8') as file:
     lines = file.readlines()
 
