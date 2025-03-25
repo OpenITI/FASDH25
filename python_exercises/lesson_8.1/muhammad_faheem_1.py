@@ -1,87 +1,52 @@
 Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license()" for more information.
-import re
-s="this, needs, to, be, splitted!"
-s="this, needs, to, be,splitted!"
-print(re.split(r",\s*",s))
-['this', 'needs', 'to', 'be', 'splitted!']
-import os
-dir = "Downloads/FASDH25/python_exercises"
-myfolder = "manto_boys"
-print(os.path.join(dir, myfolder))
-Downloads/FASDH25/python_exercises\manto_boys
-print(os.listdir(os.path.join(dir, "lesson_8.1", myfolder)))
-Traceback (most recent call last):
-  File "<pyshell#8>", line 1, in <module>
-    print(os.listdir(os.path.join(dir, "lesson_8.1", myfolder)))
-FileNotFoundError: [WinError 3] The system cannot find the path specified: 'Downloads/FASDH25/python_exercises\\lesson_8.1\\manto_boys'
-print(os.listdir(os.path.join(dir, "lesson_8.1",)))
-Traceback (most recent call last):
-  File "<pyshell#9>", line 1, in <module>
-    print(os.listdir(os.path.join(dir, "lesson_8.1",)))
-FileNotFoundError: [WinError 3] The system cannot find the path specified: 'Downloads/FASDH25/python_exercises\\lesson_8.1'
-print(os.listdir(os.path.join(dir, "lesson_8.1", )))
-Traceback (most recent call last):
-  File "<pyshell#10>", line 1, in <module>
-    print(os.listdir(os.path.join(dir, "lesson_8.1", )))
-FileNotFoundError: [WinError 3] The system cannot find the path specified: 'Downloads/FASDH25/python_exercises\\lesson_8.1'
+>>> import re
+... 
+... # Task 0. Open a single article :
+... 
+... folder = "aljazeera_articles"
+... filename = "2024-03-28_9276.txt"
+... 
+... # EXERCISE: use an f string to combine the folder and filename variables into a path
+... #           (remember: a path uses slashes "/" to separate file and folder names)
+... # NB: you HAVE to use the variable names,
+... #     DO NOT write f"aljazeera_articles/2024-04-18_406.txt"
+... 
+... file_path = f"{folder}/{filename}"
+... 
+... print(f"The path to the article is: {file_path}")
+... 
+... # load the text file into Python:
+... with open(file_path, mode="r", encoding="utf8") as file:
+...     text = file.read()
+... 
+... # EXERCISE: print the first 100 characters of the text:
+... print(text[:100])
+... 
+... pattern = r"Israeli?"
+... matches = re.findall(pattern, text)
+... print(matches)
+... n_matches = len(matches)
+... print(n_matches)
+... print(f"There are {n_matches} of {pattern} in the article {filename}")
+... 
+... splitter_pattern = r"\n+-+\n+"
+... split_text = re.split(splitter_pattern, text)
+... title  = split_text[0]
+... body = split_text[1]
+... print("title: ", title)
+... print("body: ", body)
+... 
+... matches = re.findall(pattern, body)
+... n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article body {filename}")
 
-= RESTART: C:\Users\mongo\Downloads\FASDH25\python_exercises\lesson_8.1\masoumeh_seydi_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
+matches = re.findall(pattern, text)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article title {filename}")
+
+matches = re.findall(pattern, text)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article  {filename}")
 
 
-= RESTART: C:\Users\mongo\Downloads\FASDH25\python_exercises\lesson_8.1\masoumeh_seydi_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
-
------
-
-This live page i
->>> 
-= RESTART: C:\Users\mongo\Downloads\FASDH25\python_exercises\lesson_8.1\masoumeh_seydi_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
-
------
-
-This live page i
->>> 
-= RESTART: C:\Users\mongo\Downloads\FASDH25\python_exercises\lesson_8.1\masoumeh_seydi_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
-
------
-
-This live page i
-['Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israeli', 'Israeli']
->>> 
-= RESTART: C:\Users\mongo\Downloads\FASDH25\python_exercises\lesson_8.1\masoumeh_seydi_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
-
------
-
-This live page i
-['Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israeli', 'Israeli']
-54
->>> 
-==================================== RESTART: C:\Users\mongo\Downloads\FASDH25\python_exercises\lesson_8.1\muhammad_faheem_0.py ===================================
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
-
------
-
-This live page i
-['Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israeli', 'Israeli']
-54
-
-==================================== RESTART: C:\Users\mongo\Downloads\FASDH25\python_exercises\lesson_8.1\muhammad_faheem_0.py ===================================
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
-
------
-
-This live page i
-['Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israeli', 'Israeli']
-54
-There are 54 of Israeli? in the article 2024-03-28_9276.txt
