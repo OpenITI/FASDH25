@@ -1,4 +1,4 @@
-filename = '1330NazirAhmd.IbnWaqt.FASDH2025007-urd1.txt'
+filename = '1355MunshiPramchand.MunshiPramChandKaAfsana.FASDH2502544-urdu1'
 with open(filename, 'r', encoding= 'utf8')as file:
     lines = file.readlines()
 print("First 10 lines:")
@@ -38,7 +38,3 @@ first_level_headings = []
 for heading in heading_lines:
     if heading.count("|") ==1:
         first_level_headings.append(heading)
-
-          
-          
-          
