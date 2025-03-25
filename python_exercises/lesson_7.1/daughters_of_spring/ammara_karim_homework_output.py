@@ -2,6 +2,7 @@ Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (
 Type "help", "copyright", "credits" or "license()" for more information.
 
 = RESTART: C:\Users\GB\Downloads\FASDH25\python_exercises\lesson_7.1\daughters_of_spring\ammara_karim_homework.py
+
 First 10 lines of the file:
 ######OpenITI#
 
@@ -14,41 +15,49 @@ First 10 lines of the file:
 #META# Escriptorium document pk: 7582
 
 
-First 3 markdown headings:
+
+First 3 headings:
 ######OpenITI#
 ### | حرفِ آغاز
 ### |  مير امّن اور فورٹ وليم کالج
 
-Word count for each heading:
-Count of words in this heading: 1
-Count of words in this heading: 4
-Count of words in this heading: 8
-Count of words in this heading: 5
-Count of words in this heading: 6
-Count of words in this heading: 6
-Count of words in this heading: 6
-Count of words in this heading: 6
-Count of words in this heading: 6
+Word count in each heading:
 
-Length of each word in each heading:
-Heading: ######OpenITI#
-Word lengths: [14]
-Heading: ### | حرفِ آغاز
-Word lengths: [3, 1, 4, 4]
-Heading: ### |  مير امّن اور فورٹ وليم کالج
-Word lengths: [3, 1, 3, 4, 3, 4, 4, 4]
-Heading: ### |  شروع کے قصّے
-Word lengths: [3, 1, 4, 2, 4]
-Heading: ### | سير پہلے درويش کی
-Word lengths: [3, 1, 3, 4, 5, 2]
-Heading: ### | سير دوسرے درويش کی
-Word lengths: [3, 1, 3, 5, 5, 2]
-Heading: ### | حقیقت پارہ لعل کی
-Word lengths: [3, 1, 5, 4, 3, 2]
-Heading: ### | سیر تیسرے درویش کی
-Word lengths: [3, 1, 3, 5, 5, 2]
-Heading: ### | چھتے درویش کی سیر
-Word lengths: [3, 1, 4, 5, 2, 3]
+Current heading: ######OpenITI#
+Count of words in this heading: 1
+Lengths of words in this heading: [14]
+
+Current heading: ### | حرفِ آغاز
+Count of words in this heading: 4
+Lengths of words in this heading: [3, 1, 4, 4]
+
+Current heading: ### |  مير امّن اور فورٹ وليم کالج
+Count of words in this heading: 8
+Lengths of words in this heading: [3, 1, 3, 4, 3, 4, 4, 4]
+
+Current heading: ### |  شروع کے قصّے
+Count of words in this heading: 5
+Lengths of words in this heading: [3, 1, 4, 2, 4]
+
+Current heading: ### | سير پہلے درويش کی
+Count of words in this heading: 6
+Lengths of words in this heading: [3, 1, 3, 4, 5, 2]
+
+Current heading: ### | سير دوسرے درويش کی
+Count of words in this heading: 6
+Lengths of words in this heading: [3, 1, 3, 5, 5, 2]
+
+Current heading: ### | حقیقت پارہ لعل کی
+Count of words in this heading: 6
+Lengths of words in this heading: [3, 1, 5, 4, 3, 2]
+
+Current heading: ### | سیر تیسرے درویش کی
+Count of words in this heading: 6
+Lengths of words in this heading: [3, 1, 3, 5, 5, 2]
+
+Current heading: ### | چھتے درویش کی سیر
+Count of words in this heading: 6
+Lengths of words in this heading: [3, 1, 4, 5, 2, 3]
 
 First-level headings:
 ### | حرفِ آغاز
