@@ -19,6 +19,7 @@ place names like Israel, Gaza, and Palestine are mentioned
 in these articles.
 '''
 import re
+
 # Task 0. Open a single article :
 
 folder = "aljazeera_articles"
@@ -45,4 +46,24 @@ matches = re.findall(pattern, text)
 print(matches)
 n_matches = len(matches)
 print(n_matches)
-print(f"There are {n_matches} of {pattern} in the atricle {filename}")
+print(f"There are {n_matches} of {pattern} in the artical {filename}")
+
+
+splitter_pattern = r"\n+-+\n+"
+split_text = re.split(splitter_pattern, text)
+title = split_text[0]
+body = split_text[1]
+
+
+matches = re.findall(pattern, title)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the artical title {filename}")
+
+matches = re.findall(pattern, body)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the artical  body {filename}")
+
+
+
+
+
