@@ -2,624 +2,1259 @@ Python 3.13.1 (v3.13.1:06714517797, Dec  3 2024, 14:00:22) [Clang 15.0.0 (clang-
 Type "help", "copyright", "credits" or "license()" for more information.
 
 = RESTART: /Users/faiz/Downloads/FASDH25/python_exercises/lesson_7.1/zirafa/faiz_ahmed_homework.py
+['######OpenITI#\n', '\n', '#META# Creator: escriptorium\n', '#META# Created: 2025-03-05T18:12:35.848584+00:00\n', '#META# LastChange: 2025-03-05T18:12:35.848599+00:00\n', '#META# transcription model: FASDH25_transcription.mlmodel\n', '#META# segmentation model: urdu_segm_fas25.mlmodel\n', '#META# transcribers: zirafa\n', '#META# Escriptorium document pk: 7239\n', '\n']
+
+First three headings:
 ######OpenITI#
 
-#META# Creator: escriptorium
-#META# Created: 2025-03-05T18:12:35.848584+00:00
-#META# LastChange: 2025-03-05T18:12:35.848599+00:00
-#META# transcription model: FASDH25_transcription.mlmodel
-#META# segmentation model: urdu_segm_fas25.mlmodel
-#META# transcribers: zirafa
-#META# Escriptorium document pk: 7239
-
-First 3 headings:
-######OpenITI#
 ### | غزلیات
+
 ### ||
-Word count for each heading:
-Count of words in this heading: 1
-Count of words in this heading: 3
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 3
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 3
-Count of words in this heading: 2
-Count of words in this heading: 5
-Count of words in this heading: 2
-Count of words in this heading: 3
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 5
-Count of words in this heading: 2
-Count of words in this heading: 5
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Count of words in this heading: 3
-Count of words in this heading: 2
-Count of words in this heading: 7
-Count of words in this heading: 2
-Count of words in this heading: 4
-Count of words in this heading: 2
-Word lengths in each heading:
-Heading: ######OpenITI#
-Word lengths: 14 
-Heading: ### | غزلیات
-Word lengths: 3 1 6 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | سقت حسیررئی
-Word lengths: 3 1 3 8 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | مطلع ثانی
-Word lengths: 3 1 4 4 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | فی المنقبت
-Word lengths: 3 1 2 7 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | مدح شاہ
-Word lengths: 3 1 3 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | غزل
-Word lengths: 3 1 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | مدح شاہ
-Word lengths: 3 1 3 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | غزل
-Word lengths: 3 1 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | درحضت انب مثنوی
-Word lengths: 3 1 5 3 5 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | قطعات
-Word lengths: 3 1 5 
-Heading: ### || حصور شاد
-Word lengths: 3 2 4 3 
-Heading: ### |||
-Word lengths: 3 3 
-Heading: ### | چکنی ڈلی
-Word lengths: 3 1 4 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | بیان مصنف
-Word lengths: 3 1 4 4 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | مدح نصرت الملک
-Word lengths: 3 1 3 4 5 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | ہے    خرماہ صفر
-Word lengths: 3 1 2 5 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | درمدح شاہ
-Word lengths: 3 1 5 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | روزہ
-Word lengths: 3 1 4 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | گزارش مصنف بہ حضور شاہ
-Word lengths: 3 1 5 4 2 4 3 
-Heading: ### ||
-Word lengths: 3 2 
-Heading: ### | ربا عیادت
-Word lengths: 3 1 3 5 
-Heading: ### ||
-Word lengths: 3 2 
-First-level headings:
-['### | غزلیات', '### | سقت حسیررئی', '### | مطلع ثانی', '### | فی المنقبت', '### | مدح شاہ', '### | غزل', '### | مدح شاہ', '### | غزل', '### | درحضت انب مثنوی', '### | قطعات', '### | چکنی ڈلی', '### | بیان مصنف', '### | مدح نصرت الملک', '### | ہے    خرماہ صفر', '### | درمدح شاہ', '### | روزہ', '### | گزارش مصنف بہ حضور شاہ', '### | ربا عیادت']
+
+
+Current heading: ######OpenITI#
+
+Count of words in this line: 10 1
+Length of '######OpenITI#': 14
+
+Current heading: ### | غزلیات
+
+Count of words in this line: 10 3
+Length of '###': 3
+Length of '|': 1
+Length of 'غزلیات': 6
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | سقت حسیررئی
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'سقت': 3
+Length of 'حسیررئی': 8
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | مطلع ثانی
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'مطلع': 4
+Length of 'ثانی': 4
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | فی المنقبت
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'فی': 2
+Length of 'المنقبت': 7
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | مدح شاہ
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'مدح': 3
+Length of 'شاہ': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | غزل
+
+Count of words in this line: 10 3
+Length of '###': 3
+Length of '|': 1
+Length of 'غزل': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | مدح شاہ
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'مدح': 3
+Length of 'شاہ': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | غزل
+
+Count of words in this line: 10 3
+Length of '###': 3
+Length of '|': 1
+Length of 'غزل': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | درحضت انب مثنوی
+
+Count of words in this line: 10 5
+Length of '###': 3
+Length of '|': 1
+Length of 'درحضت': 5
+Length of 'انب': 3
+Length of 'مثنوی': 5
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | قطعات
+
+Count of words in this line: 10 3
+Length of '###': 3
+Length of '|': 1
+Length of 'قطعات': 5
+
+Current heading: ### || حصور شاد
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '||': 2
+Length of 'حصور': 4
+Length of 'شاد': 3
+
+Current heading: ### |||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '|||': 3
+
+Current heading: ### | چکنی ڈلی
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'چکنی': 4
+Length of 'ڈلی': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | بیان مصنف
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'بیان': 4
+Length of 'مصنف': 4
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | مدح نصرت الملک
+
+Count of words in this line: 10 5
+Length of '###': 3
+Length of '|': 1
+Length of 'مدح': 3
+Length of 'نصرت': 4
+Length of 'الملک': 5
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | ہے    خرماہ صفر
+
+Count of words in this line: 10 5
+Length of '###': 3
+Length of '|': 1
+Length of 'ہے': 2
+Length of 'خرماہ': 5
+Length of 'صفر': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | درمدح شاہ
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'درمدح': 5
+Length of 'شاہ': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | روزہ
+
+Count of words in this line: 10 3
+Length of '###': 3
+Length of '|': 1
+Length of 'روزہ': 4
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | گزارش مصنف بہ حضور شاہ
+
+Count of words in this line: 10 7
+Length of '###': 3
+Length of '|': 1
+Length of 'گزارش': 5
+Length of 'مصنف': 4
+Length of 'بہ': 2
+Length of 'حضور': 4
+Length of 'شاہ': 3
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+Current heading: ### | ربا عیادت
+
+Count of words in this line: 10 4
+Length of '###': 3
+Length of '|': 1
+Length of 'ربا': 3
+Length of 'عیادت': 5
+
+Current heading: ### ||
+
+Count of words in this line: 10 2
+Length of '###': 3
+Length of '||': 2
+
+First-level headings (contain exactly one '|'):
+['### | غزلیات\n', '### | سقت حسیررئی\n', '### | مطلع ثانی\n', '### | فی المنقبت\n', '### | مدح شاہ\n', '### | غزل\n', '### | مدح شاہ\n', '### | غزل\n', '### | درحضت انب مثنوی\n', '### | قطعات\n', '### | چکنی ڈلی\n', '### | بیان مصنف\n', '### | مدح نصرت الملک\n', '### | ہے    خرماہ صفر\n', '### | درمدح شاہ\n', '### | روزہ\n', '### | گزارش مصنف بہ حضور شاہ\n', '### | ربا عیادت\n']
