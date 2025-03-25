@@ -1,4 +1,4 @@
-filename = "1225MirTqyMir.DianMir.FASDH2025018-urd1.txt"
+filename = "1374SacadatHasanMantu.MantuKaySawBhatrinAfsanay.FASDH2025002-urd1.txt"
 with open(filename, 'r', encoding='utf8') as file:
     lines = file.readlines()
     
@@ -28,4 +28,4 @@ first_level_headings = []
 for heading in heading_lines:
     if heading.count("|") == 1:  
         first_level_headings.append(heading)  
-print(first_level_headings) 
+print(first_level_headings)  
