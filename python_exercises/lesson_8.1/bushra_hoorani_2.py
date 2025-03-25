@@ -55,6 +55,7 @@ title= split_text[0]
 body = split_text[1]
 print("title: ", title)
 print("body: ", body)
+
 matches = re.findall(pattern, text)
 n_matches = len(matches)
 print(f"There are {n_matches} of {pattern} in the article text {filename}")
