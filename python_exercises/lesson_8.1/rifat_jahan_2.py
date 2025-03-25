@@ -1,4 +1,4 @@
-'''This is your starting script for today's Python class.
+ '''This is your starting script for today's Python class.
 
 In this Python class we will explore a collection of articles from
 the website Al Jazeera English about Israel and Palestine.
@@ -60,5 +60,4 @@ print(f"There are {n_matches} of {pattern} in the article title {filename}")
 
 matches = re.findall(pattern, body)
 n_matches = len(matches)
-print(f"There are {n_matches} of {pattern} in the article body {filename}")
-
+print(f"There are {n_matches} of {pattern} in the article body {filename}")
