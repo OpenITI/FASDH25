@@ -1,4 +1,6 @@
-'''This is your starting script for today's Python class.
+
+
+content = """'''This is your starting script for today's Python class.
 
 In this Python class we will explore a collection of articles from
 the website Al Jazeera English about Israel and Palestine.
@@ -18,8 +20,6 @@ The goal for today's class it to find out how many times
 place names like Israel, Gaza, and Palestine are mentioned
 in these articles.
 '''
-import re
-
 
 # Task 0. Open a single article :
 
@@ -31,7 +31,7 @@ filename = "2024-03-28_9276.txt"
 # NB: you HAVE to use the variable names,
 #     DO NOT write f"aljazeera_articles/2024-04-18_406.txt"
 
-file_path = f"{folder}/{filename}"
+file_path = f""
 
 print(f"The path to the article is: {file_path}")
 
@@ -40,32 +40,16 @@ with open(file_path, mode="r", encoding="utf8") as file:
     text = file.read()
 
 # EXERCISE: print the first 100 characters of the text:
-print(text[:100])
-
-pattern =r"Israeli?"
-matches = re.findall(pattern, text)
-print(matches)
-n_matches = len(matches)
-print(n_matches)
-print(f"There are {n_matches} of {pattern} in the article {filename}")
+print()
 
 
+"""
 
-
-
-splitter_pattern = r"\n+-+\n+"
-split_text = re.split(splitter_pattern, text)
-title = split_text[0]
-body = split_text[1]
-
-
-matches = re.findall(pattern, body)
-n_matches +len(matches)
-print(f"There are {n_matches} of {pattern} in the article body {filename}")
-
-matches = re.findall(pattern, body)
-n_matches +len(matches)
-print(f"There are {n_matches} of {pattern} in the article text {filename}")
-
-
-
+with open("courseid_7552_participants.csv", mode="r", encoding="utf8") as file:
+    student_data = file.readlines()
+    for row in student_data[1:]:
+        name = f"{row.split(',')[0]}_{row.split(',')[1]}".lower()
+        print(name)
+        fn = f"{name}_0.py"
+        with open(fn, mode="w", encoding="utf8") as file:
+            file.write(content)
