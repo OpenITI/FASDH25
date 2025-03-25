@@ -49,4 +49,22 @@ print(n_matches)
 print(f"There are {n_matches} of {pattern} in the article {filename}")
 
 
+splitter_pattern = r"\n+-+\n+"
+split_text = re.split(splitter_pattern, text)
+title = split_text[0]
+body = split_text[1]
+print("title: ", title)
+print("body: ", body)
 
+matches = re.findall(pattern, body)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article {filename}")
+
+
+matches = re.findall(pattern, body)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article body {filename}")
+
+matches = re.findall(pattern, body)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article title {filename}")
