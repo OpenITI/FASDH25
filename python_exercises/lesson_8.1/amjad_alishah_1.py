@@ -1,40 +1,71 @@
-Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> 
-============================================= RESTART: C:\Users\laptop inn\Downloads\FASDH25\python_exercises\lesson_8.1\amjad_alishah_0.py ============================================
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
+'''This is your starting script for today's Python class.
 
------
+In this Python class we will explore a collection of articles from
+the website Al Jazeera English about Israel and Palestine.
 
-This live page i
->>> 
-= RESTART: C:\Users\laptop inn\Downloads\FASDH25\python_exercises\lesson_8.1\amjad_alishah_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
+You will find the articles in the "aljazeera_articles" subfolder.
 
------
+The collection of articles we are going to look at is only a selection
+of a larger dataset published by Inacio Vieira on Kaggle,
+a repository for data and code for machine learning.
+https://www.kaggle.com/datasets/inaciovieira/al-jazeera-english-israel-gaza-war-from-7th-oct-23
 
-This live page i
-['Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israeli', 'Israeli']
->>> 
-= RESTART: C:\Users\laptop inn\Downloads\FASDH25\python_exercises\lesson_8.1\amjad_alishah_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
+The selection criteria of the subset we are working on today are:
+1. The articles were written from 7 October 2023 onwards
+2. The articles are at least 15Kb in size
 
------
+The goal for today's class it to find out how many times
+place names like Israel, Gaza, and Palestine are mentioned
+in these articles.
+'''
+import re
 
-This live page i
-['Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israeli', 'Israeli']
-54
->>> 
-= RESTART: C:\Users\laptop inn\Downloads\FASDH25\python_exercises\lesson_8.1\amjad_alishah_0.py
-The path to the article is: aljazeera_articles/2024-03-28_9276.txt
-Israel’s war on Gaza updates: ICJ again orders Israel to ensure aid to Gaza
 
------
+# Task 0. Open a single article :
 
-This live page i
-['Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israeli', 'Israel', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israel', 'Israel', 'Israel', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israeli', 'Israel', 'Israeli', 'Israeli']
-54
-There are 54 of Israeli? in the article 2024-03-28_9276.txt
+folder = "aljazeera_articles"
+filename = "2024-03-28_9276.txt"
+
+# EXERCISE: use an f string to combine the folder and filename variables into a path
+#           (remember: a path uses slashes "/" to separate file and folder names)
+# NB: you HAVE to use the variable names,
+#     DO NOT write f"aljazeera_articles/2024-04-18_406.txt"
+
+file_path = f"{folder}/{filename}"
+
+print(f"The path to the article is: {file_path}")
+
+# load the text file into Python:
+with open(file_path, mode="r", encoding="utf8") as file:
+    text = file.read()
+
+# EXERCISE: print the first 100 characters of the text:
+print(text[:100])
+
+pattern =r"Israeli?"
+matches = re.findall(pattern, text)
+print(matches)
+n_matches = len(matches)
+print(n_matches)
+print(f"There are {n_matches} of {pattern} in the article {filename}")
+
+
+
+
+
+splitter_pattern = r"\n+-+\n+"
+split_text = re.split(splitter_pattern, text)
+title = split_text[0]
+body = split_text[1]
+
+
+matches = re.findall(pattern, body)
+n_matches +len(matches)
+print(f"There are {n_matches} of {pattern} in the article body {filename}")
+
+matches = re.findall(pattern, body)
+n_matches +len(matches)
+print(f"There are {n_matches} of {pattern} in the article text {filename}")
+
+
+
