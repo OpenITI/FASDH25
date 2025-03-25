@@ -8,7 +8,7 @@ print("First 10 lines of the file:")
 for line in lines[:10]:
     print(line.strip())
 
-heading_lines = [line.strip() for line in lines if "###" in line]
+heading_lines = [line.strip() for line in lines if "### " in line]
 
 print("\nFirst 3 markdown headings:")
 for heading in heading_lines[:3]:
