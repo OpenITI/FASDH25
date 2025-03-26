@@ -1,9 +1,7 @@
-
-
-
-with open("1184MirAmmann.BaghBahar.FASDH2025003-urd1", "r", encoding="utf-8") as file:
+filename = "1382ShawkatThanwi.JiHanPitayHayn.FASDH2025013-urd1"  
+with open(filename, 'r', encoding='utf8') as file:
     lines = file.readlines()
-
+      
 print("First 10 lines of the file:")
 for line in lines[:10]:
     print(line.strip())
