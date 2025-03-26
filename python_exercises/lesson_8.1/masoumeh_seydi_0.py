@@ -41,3 +41,25 @@ with open(file_path, mode="r", encoding="utf8") as file:
 print()
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+pattern = r"Israeli?"
+matches = re.findall(pattern, text)
+print(matches)
+n_matches = len(matches)
+print(n_matches)
+print(f"There are {n_matches} of {pattern} in the article {filename}")
+
+
+
+
