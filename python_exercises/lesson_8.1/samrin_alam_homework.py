@@ -5,7 +5,7 @@ import re
 folder = "aljazeera_articles"
 filename = "2024-01-15_10035.txt"
 
-# opens the file creating a path
+# creating a path to open the file
 
 file_path = f"{folder}/{filename}"
 print(f"The path to the article is: {file_path}")
