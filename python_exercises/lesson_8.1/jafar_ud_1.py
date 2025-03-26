@@ -19,7 +19,6 @@ place names like Israel, Gaza, and Palestine are mentioned
 in these articles.
 '''
 import re
-
 # Task 0. Open a single article :
 
 folder = "aljazeera_articles"
@@ -41,11 +40,26 @@ with open(file_path, mode="r", encoding="utf8") as file:
 # EXERCISE: print the first 100 characters of the text:
 print(text[:100])
 
-pattern=r"Israeli?"
-matches=re.findall(pattern, text)
+
+
+pattern = r"Israeli?"
+matches = re.findall(pattern, text)
 print(matches)
-n_matches=len(matches)
+n_matches = len(matches)
 print(n_matches)
 print(f"There are {n_matches} of {pattern} in the article {filename}")
+
+splitter_pattern = r"\n+-+\n+"
+split_text = re.split(splitter_pattern, text)
+title = split_text[0]
+body = split_text[1]
+
+matches = re.findall(pattern, body)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article {filename}")
+
+matches = re.findall(pattern, title)
+n_matches = len(matches)
+print(f"There are {n_matches} of {pattern} in the article title {filename}")
 
 
