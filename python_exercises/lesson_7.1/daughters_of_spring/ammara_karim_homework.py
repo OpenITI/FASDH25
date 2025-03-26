@@ -6,7 +6,7 @@ with open(filename, "r", encoding="utf8") as file:
 print("\nFirst 10 lines of the file:")
 print("".join(lines[:10]))  
 
-heading_lines = [line.strip() for line in lines if "###" in line]
+heading_lines = [line.strip() for line in lines if "### " in line]
 
 print("\nFirst 3 headings:")
 print("\n".join(heading_lines[:3]))
