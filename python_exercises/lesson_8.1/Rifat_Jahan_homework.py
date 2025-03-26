@@ -14,7 +14,7 @@ print(f"The path to the article is: {file_path}")
 with open(file_path, mode='r', encoding="utf8") as file:
       text = file.read()
 
-#split title from body using regular expressions
+#splitting title from body using separator
 splitter_pattern = r"\n+-+\n+"
 split_text = re.split(splitter_pattern, text)
 title = split_text[0]
@@ -22,9 +22,9 @@ body = split_text[1]
 print("title: ", title)
 print("body: ", body)
 
-# using the regular expression to see occurrences of 'Gazan' and 'Gaza' and searching for their matches:
+# Using the regular expression to search for matches of 'Gaza' and 'Gazan'
 pattern = r"Gazan?"
-matches = re.findall(pattern, body)
+matches = re.findall(pattern, title)
 print(matches)
 n_matches = len(matches)
 print(n_matches)

@@ -5,6 +5,6 @@ Type "help", "copyright", "credits" or "license()" for more information.
 The path to the article is: aljazeera_articles/2024-01-15_10035.txt
 title:  Israel’s war on Gaza updates: Israeli attacks kill 25 overnight in Gaza
 body:  
-['Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza', 'Gaza']
-28
-2024-01-15_10035.txt contains Gazan? 28 matches for the regex 'Gazan?'.
+['Gaza', 'Gaza']
+2
+2024-01-15_10035.txt contains Gazan? 2 matches for the regex 'Gazan?'.
