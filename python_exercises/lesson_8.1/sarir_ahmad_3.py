@@ -51,4 +51,19 @@ print(matches)
 n_matches = len(matches)
 print(f"{filename} contains {pattern} {n_matches} times the article")
 
+splitter_pattern = r"\n+-+\n+"
+split_text= re.split(splitter_pattern, text)
+title=split_text[0]
+body = split_text[1]
+print("title: ", title)
+print("body: ", body)
 
+matches= re.findall(pattern, body)
+n_matches = len(matches)
+print(f"{filename} contains {n_matches} {pattern} times in the body of the article")
+
+patterns = [r"Israilr?", r"Palestine|Palestinian", r"Gazan?"]
+for pattern in patterns:
+    matches =re.fidall(pattern, body)
+    n_matches = len(matches)
+    print(f"{filenames} contains {n_matches} {patterns} times in the body of the article")
