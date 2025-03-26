@@ -48,4 +48,20 @@ print(f"{filename} contains {n_matches} {pattern} timein the article")
 # EXERCISE: print the first 100 characters of the text:
 print()
 
+splitter_pattern = r"\n+-+\n+"
+split_text = re.split(splitter_pattern, text)
+title = split_text[0]
+body = split_text [1]
 
+print("title: ", title)
+print("body: ", body)
+
+matches = re.findall(pattern, body)
+n_matches = len(matches)
+print(f"{filename} contains {n_matches} {pattern} times in the body of the article")
+
+patterns = [r"Israeli?", r"Palestine|Palestinian", r"Gazan?"]
+for pattern in patterns:
+    matches = re.findall(pattern, body)
+    n_matches = len(matches)
+    print(f"{filename} contain {n_matches} of {pattern} times in the body of the article")
