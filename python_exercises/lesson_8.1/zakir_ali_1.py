@@ -32,17 +32,31 @@ filename = "2024-03-28_9276.txt"
 file_path = f"{folder}/{filename}"
 
 print(f"The path to the article is: {file_path}")
+
 pattern = r"Israeli?"
 # load the text file into Python:
 with open(file_path, mode="r", encoding="utf8") as file:
     text = file.read()
+
 matches = re.findall(pattern, text)
-# EXERCISE: print the first 100 characters of the text:
 print(matches)
+# EXERCISE: print the first 100 characters of the text:
+print()
 
 matches = re.findall(pattern, text)
 print(matches)
 n_matches = len(matches)
-print(f"{filename} conatins {n_matches} space {pattern} time in the article")
+print(f"{filename} contains {n_matches} {pattern} time in the article")
 
 
+splitter_pattern = r"\n+-+\n+"
+split_text = re.split(splitter_pattern, text)
+title = split_text[0]
+body = split_text[1]
+
+print("title: ", title)
+print("body: ", body)
+
+matches = re.findall(pattern, body)
+n_matches = len(matches)
+print(f"{filename} contains {n_matches} {pattern} times in the body of the article")
