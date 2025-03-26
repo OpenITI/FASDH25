@@ -14,7 +14,7 @@ The selection criteria of the subset we are working on today are:
 1. The articles were written from 7 October 2023 onwards
 2. The articles are at least 15Kb in size
 
-The goal for today's class it to find out how many times
+The goal for today's class is to find out how many times
 place names like Israel, Gaza, and Palestine are mentioned
 in these articles.
 '''
@@ -32,7 +32,8 @@ print(f"The path to the article is: {file_path}")
 with open(file_path, encoding="utf-8") as file:
     text = file.read()
 
-# find all the occurences of Israel and Israeli in the text:
+# find all the occurences of Israel or Israeli,
+# Palestine or Palestinian, and Gaza or Gazan in the text:
 pattern = r"Israeli?"
 matches = re.findall(pattern, text)
 n_matches = len(matches)
