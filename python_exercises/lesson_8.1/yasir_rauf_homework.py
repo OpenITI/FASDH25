@@ -6,7 +6,7 @@ filename = "2024-01-15_10035.txt" # Name of the file
 file_path = f"{folder}/{filename}" # Creating the full file path
 # Opening the file in read mode with UTF-8 encoding
 with open(file_path, mode="r", encoding="utf8") as file: 
-    text = file.read() ## Reading the entire file content into the variable 'text'
+    text = file.read() # Reading the entire file content into the variable 'text'
 
 #Instruction 2. Uses a regular expression that will match both 'Gaza' and 'Gazan'
 pattern = r"Gazan?" # Regex pattern: Matches "Gaza" or "Gazan"
