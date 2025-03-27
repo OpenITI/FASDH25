@@ -10,7 +10,7 @@ with open('aljazeera_articles/2024-01-15_10035.txt', mode="r", encoding="utf8") 
     text = file.read()
 # Define the regular expression pattern that matches both 'Gaza' and 'Gazan'
 
-pattern = r"Gaza[n]?"
+pattern = r"Gazan?"
 
 # Search for matches in the article title only (assuming title is the first line
 
