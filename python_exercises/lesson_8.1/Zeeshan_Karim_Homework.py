@@ -21,6 +21,4 @@ matches = re.findall(pattern, title)
 print(matches)
 n_matches=len(matches)
 print(n_matches)
-print(f"This file {filename} contains {n_matches} of {pattern} in the article's title.")
-
-
+print(f"This file {filename} contains {n_matches} of {pattern} in the article's title.")
