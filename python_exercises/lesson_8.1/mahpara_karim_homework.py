@@ -1,9 +1,11 @@
-import re
+# Import the regular expressions module
+import re  
 
-# Open a single article :
+# Define folder and file name
 folder = "aljazeera_articles"
 filename = "2024-01-15_10035.txt"
-# Combine the folder and filename variables into a path
+
+# Create the file path using an f-string
 file_path = f"{folder}/{filename}"
 
 
@@ -11,13 +13,13 @@ file_path = f"{folder}/{filename}"
 with open(file_path, mode="r", encoding="utf8") as file:
     text = file.read()
 
-# Splitting the text in body and title 
+# Splitting the text in body and title using the provided pattern
 splitter_pattern= r"\n+-+\n+"
 split_text= re.split(splitter_pattern, text)
 title = split_text[0]
 body= split_text[1]
 
-# Find matches for both 'Gaza' and 'Gazan':
+# Define the regular expression pattern to match 'Gaza' and 'Gazan'
 pattern = r"Gazan?"
 matches = re.findall(pattern, title)
 print(matches)
