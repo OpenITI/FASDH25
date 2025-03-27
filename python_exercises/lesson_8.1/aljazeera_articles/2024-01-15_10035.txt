@@ -1,10 +1,10 @@
-Israel’s war on Gaza updates: Israeli attacks kill 25 overnight in Gaza
+Israels war on Gaza updates: Israeli attacks kill 25 overnight in Gaza
 
 -----
 
-This live page is now closed. Follow along with our ongoing coverage of Israel’s war on Gaza here.
-To learn more about the discontent brewing within the Biden administration over its support for Israel’s actions in Gaza, listen to this.
-To learn more about the social media post by US Secretary of State Antony Blinken on Israel’s war on Gaza that has caused uproar, read this.
+This live page is now closed. Follow along with our ongoing coverage of Israels war on Gaza here.
+To learn more about the discontent brewing within the Biden administration over its support for Israels actions in Gaza, listen to this.
+To learn more about the social media post by US Secretary of State Antony Blinken on Israels war on Gaza that has caused uproar, read this.
 
 
 
@@ -105,5 +105,22 @@ Mohammed Abu al-Sheikh, the Palestinian Authority (PA) official in charge of the
 Since the Israeli war on the Gaza Strip began, Israeli authorities have issued stop-work orders for 10 houses and business installations in the governorate. They have also demolished five houses since October 7, Abu al-Sheikh said, calling it an act of collective punishment.
 
 
+# Open the file in read mode
+with open("aljazeera_articles/2024-01-15_10035.txt", "r", encoding="utf-8") as file:  
 
+    # Read only the first line from the file (assuming the title is on the first line)
+    title = file.readline().strip()
 
+import re  # Import the regular expressions module
+
+# Define the regex pattern to match both 'Gaza' and 'Gazan'
+regex_pattern = r'\bGaza\b|\bGazan\b'
+
+# Find all occurrences of the pattern in the title
+matches = re.findall(regex_pattern, title)
+
+# Count the number of matches
+match_count = len(matches)
+
+# Print the result in the required format
+print(f"The file 2024-01-15_10035.txt contains {match_count} matches for the regex '{regex_pattern}'.")
