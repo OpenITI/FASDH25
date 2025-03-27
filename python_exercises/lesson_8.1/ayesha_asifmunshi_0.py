@@ -18,7 +18,8 @@ The goal for today's class it to find out how many times
 place names like Israel, Gaza, and Palestine are mentioned
 in these articles.
 '''
-
+import re
+import os
 # Task 0. Open a single article :
 
 folder = "aljazeera_articles"
@@ -29,15 +30,24 @@ filename = "2024-03-28_9276.txt"
 # NB: you HAVE to use the variable names,
 #     DO NOT write f"aljazeera_articles/2024-04-18_406.txt"
 
-file_path = f""
+file_path = f"{folder}/{filename}"
 
 print(f"The path to the article is: {file_path}")
+
+pattern = r"Israeli?"
 
 # load the text file into Python:
 with open(file_path, mode="r", encoding="utf8") as file:
     text = file.read()
 
+# count the matches:
+
 # EXERCISE: print the first 100 characters of the text:
 print()
 
+
+matches = re.findall(pattern, text)
+print(matches)
+n_matches = len(matches)
+print(f"{filename} contains {pattern} {n_matches} time in the article")
 

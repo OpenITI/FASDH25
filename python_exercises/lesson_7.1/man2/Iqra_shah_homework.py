@@ -1,4 +1,4 @@
-filename = '1374SacadatHasanMantu.Katari.FASDH2025015-urd1.txt'
+filename = '1374SacadatHasanMantu.Katari.FASDH2025015-urd1'
 with open(filename, 'r', encoding= 'utf8')as file:
     lines = file.readlines()
 print("First 10 lines:")
