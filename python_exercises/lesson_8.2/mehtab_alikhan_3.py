@@ -40,7 +40,7 @@ for filename in os.listdir(folder):
         text = file.read()
 
     # find all the occurences of Israel or Israeli in the text:
-    pattern = r"Israeli?"
+    pattern = r"Israel\b"
     matches = re.findall(pattern, text)
     n_matches = len(matches)
     print(f"{filename} contains {pattern} {n_matches} times in the article")
