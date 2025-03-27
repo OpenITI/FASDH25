@@ -61,4 +61,9 @@ matches = re.findall(pattern, body)
 n_matches = len(matches)
 print(f"{filename} contains {n_matches} {pattern} times in the article")
 
-
+patterns = [r"Israeli?", r"Palestine|palestinian", r"Gaza?"]
+for pattern in patterns:
+    matches = re.findall(pattern, body)
+    n_matches = len(matches)
+    print(f"{filename} contains {n_matches} {pattern} times in the article")
+           
