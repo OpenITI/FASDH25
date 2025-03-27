@@ -25,14 +25,16 @@ import os
 folder = "aljazeera_articles"
 filename = "2024-03-28_9276.txt"
 
-total = [0,0,0]
 patterns = [r"Israel\b", r"Palestine|Palestinian", r"Gazan?"]
+
+total = [0,0,0]
 
 for filename in os.listdir(folder):
 
     # build the file path:
-    file_path = f"{folder}/{filename}"
+    #file_path = f"{folder}/{filename}"
     file_path = os.path.join(folder, filename)
+    file_path = f"{folder}/{filename}"
     print(f"The path to the article is: {file_path}")
 
     # load the article (text file) into Python:
@@ -44,6 +46,7 @@ for filename in os.listdir(folder):
     #for pattern in patterns:
     for pattern_number in range(len(patterns)):
         pattern = patterns[pattern_number]
+        print(pattern_number, pattern)
         matches = re.findall(pattern, text)
         n_matches = len(matches)
         print(f"{filename} contains {pattern} {n_matches} times in the article")
