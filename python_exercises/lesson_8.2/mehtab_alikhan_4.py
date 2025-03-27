@@ -21,18 +21,22 @@ in these articles.
 import re
 import os
 
-
 # define which folder and filename to use:
 folder = "aljazeera_articles"
 filename = "2024-03-28_9276.txt"
 
-patterns = [r"Israeli?", r"Palestine|palestinian", r"Gazan?"]
-total = [0,0,0,]
+patterns = [r"Israeli\b", r"Palestine|Palestinian", r"Gazan?"]
+
+total = [0,0,0]
 
 for filename in os.listdir(folder):
-    
+
+
+
     # build the file path:
-    file_path = os.path.join (folder, filename)
+    #file_path = f"{folder}/{filename}"
+    file_path= os.path.join(folder,filename)
+    file_path = f"{folder}/{filename}"
     print(f"The path to the article is: {file_path}")
 
     # load the article (text file) into Python:
@@ -41,18 +45,20 @@ for filename in os.listdir(folder):
 
     # find all the occurences of Israel or Israeli in the text:
     
+    
     for pattern_number in range(len(patterns)):
         pattern = patterns[pattern_number]
-        print(pattern_number, pattern)
-        n_times = total [pattern_number]
-        print(f"we found  {pattern} {n_times} times")
+        print(pattern_number)
         
         matches = re.findall(pattern, text)
         n_matches = len(matches)
         print(f"{filename} contains {pattern} {n_matches} times in the article")
         total[pattern_number] += n_matches
-        
-    
+
 print(f"we found {total} matches in the corpus!")
-    
+
+for pattern_number in range(len(patterns)):
+    pattern= patterns[pattern_number]
+    n_times =total[pattern_number]
+    print(f"we found {pattern} {n_matches} times")
 
