@@ -1,15 +1,32 @@
- 
 import re
 
-# Open the file '2024-01-15_10035.txt' in read mode and read its contents
-with open('aljazeera_articles/2024-01-15_10035.txt', 'r', encoding='utf-8') as file:
-    text = file.read()
+#Opening the file: 2024-01-15_10035.txt
 
-# Define the regular expression pattern that matches both 'Gaza' and 'Gazan'
-pattern = r'Gaza[n]?'
+folder = "aljazeera_articles"
+filename = "2024-01-15_10035.txt"
 
-# Search for matches in the article title only (assuming title is the first line)
-title = text.split('\n')[0]  # Get the first line as the title
-matches = re.findall(pattern, title)  # Find all matches of the pattern in the title
+#Creating the file path:
+
+file_path = f"{folder}/{filename}"
+print(f"The path to the article is: {file_path}")
  
-print(f"The file 2024-01-15_10035.txt contains {len(matches)} matches for the regex {pattern}.")
+#loading the text file into python:
+with open(file_path, mode='r', encoding="utf8") as file:
+      text = file.read()
+
+#splitting title from body using separator
+splitter_pattern = r"\n+-+\n+"
+split_text = re.split(splitter_pattern, text)
+title = split_text[0]
+body = split_text[1]
+print("title: ", title)
+print("body: ", body)
+
+# Using the regular expression to search for matches of 'Gaza' and 'Gazan'
+pattern = r"Gazan?"
+matches = re.findall(pattern, title)
+print(matches)
+n_matches = len(matches)
+print(n_matches)
+print(f"{filename} contains {pattern} {n_matches} matches for the regex '{pattern}'.")
+
