@@ -10,7 +10,7 @@ To learn more about the social media post by US Secretary of State Antony Blinke
 
 
 
-We will soon be closing this live page. Here’s a recap of recent developments on the 101st day of Israel’s war on Gaza:
+We will soon be closing this live page. Here is a recap of recent developments on the 101st day of Israel’s war on Gaza:
 The attacks are separate, one is in Syria and the other is in Iraq. But the Iranians issued statements claiming responsibility for both of them.
 As for the attack in Erbil, they’re saying they targeted a Mossad headquarters – Mossad is the Israeli intelligence service. The Iranians claim the Israelis are responsible for the killing of an IRGC [Islamic Revolutionary Guard Corps] general in Syria and also some other commanders of the regional “resistance axis”, as Iran describes its allies.
 The context is very important here, given that there is already a war raging in the region. Iran has been trying as much as possible to distance itself from any kind of tension. This is the first time we have seen the Iranians going a step further, especially when they are claiming to have targeted a Mossad headquarters in Erbil.
@@ -104,23 +104,30 @@ Mohammed Abu al-Sheikh, the Palestinian Authority (PA) official in charge of the
 “Area C” is the part of the occupied West Bank that is under exclusive Israeli administrative and security control. Israeli authorities rarely issue permits for Palestinian construction in the area.
 Since the Israeli war on the Gaza Strip began, Israeli authorities have issued stop-work orders for 10 houses and business installations in the governorate. They have also demolished five houses since October 7, Abu al-Sheikh said, calling it an act of collective punishment.
 
+import re
 
-# Open the file in read mode
-with open("aljazeera_articles/2024-01-15_10035.txt", "r", encoding="utf-8") as file:  
+folder = "aljazeera_articles"
+filename = "2024-01-15_10035.txt"
 
-    # Read only the first line from the file (assuming the title is on the first line)
-    title = file.readline().strip()
+file_path = f"{folder}/{filename}"   #it will open the file
 
-import re  # Import the regular expressions module
+with open(file_path, mode="r", encoding="utf-8") as file:
+    text = file.read()             #it will loads the text file in python
 
-# Define the regex pattern to match both 'Gaza' and 'Gazan'
-regex_pattern = r'\bGaza\b|\bGazan\b'
+pattern = r"Gazan?"
+matches = re.findall (pattern, text)
+print(matches)
 
-# Find all occurrences of the pattern in the title
-matches = re.findall(regex_pattern, title)
+splitter_pattern=r"\n+-+\n+"
+split_text= re.split(splitter_pattern, text)    # this will split the text in to body
+title=split_text[0]
+body=split_text[1]
 
-# Count the number of matches
-match_count = len(matches)
+matches = re.findall(pattern, title)
+print(matches)
+n_matches=len(matches)
+print(n_matches)
+print(f"This file {filename} contains {n_matches} of {pattern} in the article's title.")
 
-# Print the result in the required format
-print(f"The file 2024-01-15_10035.txt contains {match_count} matches for the regex '{regex_pattern}'.")
+
+

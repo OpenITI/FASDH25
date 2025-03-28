@@ -19,25 +19,24 @@ place names like Israel, Gaza, and Palestine are mentioned
 in these articles.
 '''
 
-# Task 0. Open a single article :
+import re
 
+# Define the folder and filename
 folder = "aljazeera_articles"
 filename = "2024-03-28_9276.txt"
 
-# EXERCISE: use an f string to combine the folder and filename variables into a path
-#           (remember: a path uses slashes "/" to separate file and folder names)
-# NB: you HAVE to use the variable names,
-#     DO NOT write f"aljazeera_articles/2024-04-18_406.txt"
+# Combine them into a file path
+file_path = f"{folder}/{filename}"
 
-file_path = f""
-
-print(f"The path to the article is: {file_path}")
-
-# load the text file into Python:
+# Load the text file
 with open(file_path, mode="r", encoding="utf8") as file:
     text = file.read()
 
-# EXERCISE: print the first 100 characters of the text:
-print()
+# Define regex pattern (case insensitive)
+pattern = r"Israeli?"  # Matches "Israel" and "Israeli"
 
+# Count occurrences
+count = len(re.findall(pattern, text, re.IGNORECASE))
 
+# Print result
+print(f"Israel/Israeli: {count}")
