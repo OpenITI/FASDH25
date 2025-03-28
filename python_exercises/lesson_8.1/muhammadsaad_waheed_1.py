@@ -32,11 +32,22 @@ file_path = f"{folder}/{filename}"
 with open(file_path, mode="r", encoding="utf8") as file:
     text = file.read()
 
-# Define regex pattern (case insensitive)
-pattern = r"Israeli?"  # Matches "Israel" and "Israeli"
+# Split title and body using the given pattern
+split_text = re.split(r"\n+-+\n+", text, maxsplit=1)
 
-# Count occurrences
-count = len(re.findall(pattern, text, re.IGNORECASE))
+# Extract title and body
+title = split_text[0].strip()
+body = split_text[1].strip() if len(split_text) > 1 else ""
 
-# Print result
-print(f"Israel/Israeli: {count}")
+# Define regex pattern for Israel/Israeli
+pattern = r"Israeli?"
+
+# Count occurrences in the body only
+count = len(re.findall(pattern, body, re.IGNORECASE))
+
+# Print results
+print(f"Title:\n{title}\n")
+print("-" * 40)  # Separator for clarity
+print(f"Body:\n{body}\n")
+print("-" * 40)  # Separator
+print(f"Israel/Israeli mentions in body: {count}")
