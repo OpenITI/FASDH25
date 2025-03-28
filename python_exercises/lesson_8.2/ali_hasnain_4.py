@@ -23,7 +23,8 @@ import os
 # define which folder and filename to use:
 folder = "aljazeera_articles"
 patterns = [r"Israeli?", r"Palestine|Palestinian", r"Gazan?"]
-total = 0
+n_patterns = len(patterns) # 3 
+total = [0,0,0]
 for filename in os.listdir(folder):
     # build the file path:
     file_path = f"{folder}/{filename}"
@@ -34,12 +35,18 @@ for filename in os.listdir(folder):
         text = file.read()
 
     # find all the occurences of Israel or Israeli in the text:
-    for pattern in patterns:
+    for pattern_no in range(n_patterns):
+        pattern = patterns[pattern_no]
         matches = re.findall(pattern, text)
         n_matches = len(matches)
         print(f"{filename} contains {pattern} {n_matches} times in the article")
-        total += n_matches
+        total[pattern_no] += n_matches
         print("until now we found {total} matches")
 
 print(f"Found {total} matches in the whole corpus")
+for pattern_no in range(n_patterns) :
+    pattern = patterns[pattern_no]
+    n_matches = total[pattern_no]
+    print(f"we found {n_matches} matches for {pattern} in all texts")
+    
 
