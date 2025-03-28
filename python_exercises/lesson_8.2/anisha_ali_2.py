@@ -34,8 +34,9 @@ with open(file_path, encoding="utf-8") as file:
 
 # find all the occurences of Israel or Israeli,
 # Palestine or Palestinian, and Gaza or Gazan in the text:
-pattern = r"Israeli?"
-matches = re.findall(pattern, text)
-n_matches = len(matches)
-print(f"{filename} contains {pattern} {n_matches} times in the article")
+patterns = [r"Israeli?"r"Palestine|Palestinian",r"Gazan?"]
+for pattern in patterns:
+    matches = re.findall(pattern, text)
+    n_matches = len(matches)
+    print(f"{filename} contains {pattern} {n_matches} times in the article")
 
