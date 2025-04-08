@@ -23,21 +23,37 @@ import os
 
 # define which folder and filename to use:
 folder = "aljazeera_articles"
+filename = "2024-03-28_9276.txt"
+
+patterns = [r"Israel\b", r"Palestine|Palestinian", r"Gazan?"]
+
+total = [0,0,0]
+
 for filename in os.listdir(folder):
-
-
     # build the file path:
-    file_path = f"{folder}/{filename}"
+    file_path = os.path.join(folder, filename)
     print(f"The path to the article is: {file_path}")
-
+    
     # load the article (text file) into Python:
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
 
-    # find all the occurences of Israel or Israeli in the text:
-    pattern = r"Israeli?"
-    matches = re.findall(pattern, text)
-    n_matches = len(matches)
-    print(f"{filename} contains {pattern} {n_matches} times in the article")
 
+    # find all the occurences of Israel, Palestine/Palestinian and Gazan? in the text:
+
+    for pattern_number in range(len(patterns)):
+        pattern= patterns[pattern_number]
+        print(pattern_number)
+        
+        matches = re.findall(pattern, text)
+        n_matches = len(matches)
+        print(f"{filename} contains {pattern} {n_matches} times in the article")
+        total[pattern_number] +=n_matches
+        
+
+print(f"we found {total} matches in the corpus!")
+for pattern_number in range(len(patterns)):
+        pattern= patterns[pattern_number]
+        n_times = total[pattern_number]
+        print(f"we found {pattern} {n_times} times")
 
