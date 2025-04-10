@@ -16,4 +16,4 @@ mARkdown/programmer/7587_programmer*
 **/*.kate-swp
 
 # ignore prep files:
-**/peter_verkinderen_prep*.py
+**/*_prep*.py
