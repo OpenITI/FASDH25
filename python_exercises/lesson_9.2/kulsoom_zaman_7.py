@@ -42,12 +42,15 @@ for filename in os.listdir(folder):
     # load the article (text file) into Python:
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
+    tagged_text= text
 
     # find all the occurences of the patterns in the text:
     for pattern in patterns:
         matches = re.findall(pattern, text)
         n_matches = len(matches)
         patterns[pattern] +=n_matches
+        tagged_text = re.sub(pattern, "+++" + pattern, tagged_text)
+    print(tagged_text)
 for pattern, count in patterns.items():
     if count > 0:
         print(f"Found {pattern} {count} time")
