@@ -20,13 +20,19 @@ import os
 
 # define which folder to use:
 # NB: these are different articles than in the previous weeks
-folder = "aljazeera_articles"  
+folder = "aljazeera_articles"
 
-# define the patterns we want to search:
-patterns = {r"Israeli?": 0,
-            r"Palestine|Palestinian": 0,
-            r"Gazan?": 0
-            }
+gazatteer_path = "gazetteers\geonames_gaza_selection.tsv"
+with open(gazatteer_path , encoding="utf8") as file:
+    data = file.read()
+print(data)
+
+rows = data.split("\n")
+patterns ={}
+for row in rows[1:]:
+    columns = row.split("\t")
+    place= columns[0]
+    patterns[place]= 0
 
 for filename in os.listdir(folder):
     # build the file path:
@@ -36,14 +42,15 @@ for filename in os.listdir(folder):
     # load the article (text file) into Python:
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
+    tagged_text= text
 
     # find all the occurences of the patterns in the text:
     for pattern in patterns:
         matches = re.findall(pattern, text)
         n_matches = len(matches)
-        patterns[pattern] += n_matches
-
+        patterns[pattern] +=n_matches
+        tagged_text = re.sub(pattern, "+++" + pattern, tagged_text)
+    print(tagged_text)
 for pattern, count in patterns.items():
-    print(f"Found {pattern} {count} times")
-            
-            
+    if count > 0:
+        print(f"Found {pattern} {count} time")
