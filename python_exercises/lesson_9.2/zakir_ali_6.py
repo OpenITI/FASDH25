@@ -23,22 +23,24 @@ import os
 folder = "aljazeera_articles"  
 
 # define the patterns we want to search:
-file_path = "gazetteers/geonames_gaza_selection.tsv"
-with open(file_path, encoding="utf-8") as file:
-   data = file.read()
+path = "gazetteers/geonames_gaza_selection.tsv"
+with open(path, encoding="utf-8") as file:
+        data = file.read()
+
 print(data)
 
 
-patterns= {}
+patterns = {}
+
 rows = data.split("\n")
 print(rows)
-for row in rows[1:]:
-    columns = row.split("\t")
-    name = columns[0]
+for row in rows:
+    column =  row.split("\t")
+    name = column[0]
     print(name)
     patterns[name] = 0
 
-    print(patterns)
+print(patterns)
 
 
 
@@ -62,4 +64,3 @@ for pattern in patterns:
     count = patterns[pattern]
     if count > 0:
         print(f"found {pattern} {patterns[pattern]} times")
-
