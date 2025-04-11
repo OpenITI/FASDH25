@@ -11,21 +11,24 @@ a repository for data and code for machine learning.
 https://www.kaggle.com/datasets/inaciovieira/al-jazeera-english-israel-gaza-war-from-7th-oct-23
 
 The selection criteria of the subset we are working on today are:
-1. The articles were written from 2023 onwards
-2. The articles contain at least 9 place names in Gaza
+1. The articles were written from 7 October 2023 onwards
+2. The articles are at least 15Kb in size
 
+The goal for today's class is to find out how many times
+place names like Israel, Gaza, and Palestine are mentioned
+in these articles.
 '''
 import re
 import os
 
-# define which folder to use:
-# NB: these are different articles than in the previous weeks
-folder = "aljazeera_articles"  
+# define which folder and filename to use:
+folder = "aljazeera_articles"
 
-# define the patterns we want to search:
-patterns = {r"Israeli?" : 0, r"Palestine|Palestinian" : 0, r"Gazan?" : 0}
-
+patterns = [r"Israeli?", r"Palestine|Palestinian", r"Gazan?"]
+n_patterns = len(patterns)
+total = [0,0,0]
 for filename in os.listdir(folder):
+
     # build the file path:
     file_path = f"{folder}/{filename}"
     print(f"The path to the article is: {file_path}")
@@ -34,13 +37,13 @@ for filename in os.listdir(folder):
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
 
-    # find all the occurences of the patterns in the text:
-    for pattern in patterns:
+    # find all the occurences of Israel or Israeli in the text:
+    for i in range(n_patterns):
+        pattern = patterns[i]
         matches = re.findall(pattern, text)
         n_matches = len(matches)
-        print(n_matches, pattern)
-        patterns[pattern] += n_matches
+        print(f"{filename} contains {patterns} {n_matches} times in the article")
+        total[i] += n_matches
+        print(f"until now we found {total} matches")
 
-for pattern in patterns:
-    print(f"found {pattern} {patterns[pattern]} times")
 
