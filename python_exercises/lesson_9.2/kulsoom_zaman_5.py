@@ -11,20 +11,30 @@ a repository for data and code for machine learning.
 https://www.kaggle.com/datasets/inaciovieira/al-jazeera-english-israel-gaza-war-from-7th-oct-23
 
 The selection criteria of the subset we are working on today are:
-1. The articles were written from 7 October 2023 onwards
-2. The articles are at least 15Kb in size
+1. The articles were written from 2023 onwards
+2. The articles contain at least 9 place names in Gaza
 
-The goal for today's class is to find out how many times
-place names like Israel, Gaza, and Palestine are mentioned
-in these articles.
 '''
 import re
-import os 
+import os
 
-# define which folder and filename to use:
+# define which folder to use:
+# NB: these are different articles than in the previous weeks
 folder = "aljazeera_articles"
-for filename in os.listdir(folder):
 
+gazatteer_path = "gazetteers\geonames_gaza_selection.tsv"
+with open(gazatteer_path , encoding="utf8") as file:
+    data = file.read()
+print(data)
+
+rows = data.split("\n")
+patterns ={}
+for row in rows[1:]:
+    columns = row.split("\t")
+    place= columns[0]
+    patterns[place]= 0
+
+for filename in os.listdir(folder):
     # build the file path:
     file_path = f"{folder}/{filename}"
     print(f"The path to the article is: {file_path}")
@@ -33,9 +43,11 @@ for filename in os.listdir(folder):
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
 
-    # find all the occurences of Israel or Israeli in the text:
-    pattern = r"Israeli?"
-    matches = re.findall(pattern, text)
-    n_matches = len(matches)
-    print(f"{filename} contains {pattern} {n_matches} times in the article")
-
+    # find all the occurences of the patterns in the text:
+    for pattern in patterns:
+        matches = re.findall(pattern, text)
+        n_matches = len(matches)
+        patterns[pattern] +=n_matches
+for pattern, count in patterns.items():
+    if count > 0:
+        print(f"Found {pattern} {count} time")
