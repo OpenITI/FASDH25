@@ -23,14 +23,29 @@ import os
 folder = "aljazeera_articles"  
 
 # define the patterns we want to search:
-path = "gazetteers/geonames_gaza_selection.tsv"
-with open(path, encoding="utf-8") as file:
+gazetteer_path = "geonames_gaza_selection.tsv"
+gazaetteer_path = "gazetteers/geonames_gaza_selection.tsv"
+with open(gazaetteer_path, encoding="utf-8") as file:
     data = file.read()
-        
-print(data)
+#print(data)
+
+rows = data.split("\n")
 
 patterns = {}
+for row in rows[1:]:
+    columns = row.split("\t")
+    place = columns[0]
+    #print(place)
+    patterns[place] = 0
 
+print(patterns)
+
+
+#input("CONTINUE")
+
+
+
+rows = data.split("\n")
 for filename in os.listdir(folder):
     # build the file path:
     file_path = f"{folder}/{filename}"
@@ -39,15 +54,17 @@ for filename in os.listdir(folder):
     # load the article (text file) into Python:
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
+    tagged_text = text    
 
     # find all the occurences of the patterns in the text:
     for pattern in patterns:
         matches = re.findall(pattern, text)
         n_matches = len(matches)
-        print(n_matches, pattern)
         patterns[pattern] += n_matches
+    tagged_text = re.sub(pattern, "+++ " + pattern, tagged_text)
+    print(tagged_text)    
         
-    print (patterns)
 
-for pattern in patterns:
-    print(f"found {pattern} {patterns[pattern]} times")
+for pattern, count in patterns.items():
+    if count > 0:
+        print(f"found {pattern} {count} times")
