@@ -23,7 +23,7 @@ import os
 folder = "aljazeera_articles"  
 
 # define the patterns we want to search:
-patterns = [r"Israeli?", r"Palestine|Palestinian", r"Gazan?"]
+patterns = {r"Israeli?": 0, r"Palestine|Palestinian": 0, r"Gazan?": 0}
 
 for filename in os.listdir(folder):
     # build the file path:
@@ -39,3 +39,11 @@ for filename in os.listdir(folder):
         matches = re.findall(pattern, text)
         n_matches = len(matches)
         print(n_matches, pattern)
+        patterns[pattern] += n_matches
+        
+        
+for pattern in patterns:
+     print(f"found {pattern} {patterns[pattern]} times") 
+
+       
+ 
