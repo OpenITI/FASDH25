@@ -79,6 +79,3 @@ for heading in heading_lines:                   #This .count() method will count
     if pipe_count==1:
         first_level_headings.append(heading)
     print('This heading ', heading,'has 1 | character \n')
-
-
-    
