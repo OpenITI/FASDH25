@@ -20,3 +20,6 @@ mARkdown/programmer/7587_programmer*
 
 # ignore prep files:
 **/*_prep*.py
+
+# ignore tsv files in the lesson_10.1 folder:
+python_exercises/lesson_10.1/*.tsv
