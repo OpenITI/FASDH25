@@ -27,9 +27,11 @@ define write tsv(data)
         path (str): the path to which the tsv file will be written
     """
     import pandas as pd
-    # the next two lines are correct!
+    # turn the dictionary into a list of (key, value) tuples (this is correct):
     items = list(data.items())
-    df = pd.DataFrame.from_records(items, columns=column_list)
+    # create a dataframe from the items list (this is correct):
+    df = pd.DataFrame.from_records(items, columns=column_list, index=False)
+    # write the dataframe to tsv:
 df.to_csv(path, sep="\t")
 break
 
@@ -77,3 +79,5 @@ for pattern in patterns:
         print(f"found {pattern} {count} times")
 
 # call the function to write your tsv file:
+columns = ["asciiname", "frequency"]
+tsv_filename = "frequencies.tsv"
