@@ -23,7 +23,14 @@ import os
 folder = "aljazeera_articles"  
 
 # define the patterns we want to search:
-patterns = [r"Israeli?", r"Palestine|Palestinian", r"Gazan?"]
+gazetteer_path="gazetteers/geonames_gaza_selection.tsv"
+with open(gazetteer_path, encoding="utf-8") as file:
+    data = file.read()
+
+    
+print(data)
+input("CONTINUE")
+
 
 for filename in os.listdir(folder):
     # build the file path:
@@ -38,4 +45,7 @@ for filename in os.listdir(folder):
     for pattern in patterns:
         matches = re.findall(pattern, text)
         n_matches = len(matches)
-        print(n_matches, pattern)
+        patterns[pattern] += n_matches
+        
+for pattern, count in patterns.items():
+    print(f"found {patterns} {patterns[pattern]} times")
