@@ -21,7 +21,9 @@ pd.set_option("max_colwidth", 15)
 print(coordinates)
 
 # create the map:
-fig = px.scatter_map(coordinates, lat="latitude", lon="longitude")
+fig = px.scatter_map(coordinates, lat="latitude", lon="longitude", hover_name="name")
+
+                     
 
 # display it in the browser:
 fig.show()
