@@ -1,4 +1,4 @@
-# Task 0. Open a single article
+#Open a single article
 folder = "aljazeera_articles"
 filename = "2024-03-28_9276.txt"
 file_path = f"{folder}/{filename}"

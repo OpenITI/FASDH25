@@ -1,41 +1,27 @@
-'''This is your starting script for today's Python class.
-
-In this Python class we will explore a collection of articles from
-the website Al Jazeera English about Israel and Palestine.
-
-You will find the articles in the "aljazeera_articles" subfolder.
-
-The collection of articles we are going to look at is only a selection
-of a larger dataset published by Inacio Vieira on Kaggle,
-a repository for data and code for machine learning.
-https://www.kaggle.com/datasets/inaciovieira/al-jazeera-english-israel-gaza-war-from-7th-oct-23
-
-The selection criteria of the subset we are working on today are:
-1. The articles were written from 7 October 2023 onwards
-2. The articles are at least 15Kb in size
-
-The goal for today's class is to find out how many times
-place names like Israel, Gaza, and Palestine are mentioned
-in these articles.
-'''
-import re
-
-# define which folder and filename to use:
+print('1. I am printing the path to the file from a specific folder \n')
 folder = "aljazeera_articles"
-filename = "2024-03-28_9276.txt"
-
-# build the file path:
+filename = "2024-03-28_9276.txt"     
 file_path = f"{folder}/{filename}"
-print(f"The path to the article is: {file_path}")
+print (f"The path to the article is: {file_path}")
+print('--------------------\n')
 
-# load the article (text file) into Python:
+
+print ('2. I am finding all the occurences of Israel or Israeli in the text \n')
+import re
 with open(file_path, encoding="utf-8") as file:
-    text = file.read()
-
-# find all the occurences of Israel or Israeli,
-# Palestine or Palestinian, and Gaza or Gazan in the text:
+    text = file.read()       #loading the text in Python
 pattern = r"Israeli?"
 matches = re.findall(pattern, text)
 n_matches = len(matches)
-print(f"{filename} contains {pattern} {n_matches} times in the article")
+print(f"{filename} contains {pattern} {n_matches} times in the article \n ")
+print('--------------------\n')
 
+
+print ('''3. I am finding all occurences of Israel or Israeli, Gaza or Gazan, 
+Palestine or Palestinian in a single article. \n ''')
+patterns = [r"Israel?", r"Gazan?", r"Palestine|Palestinian"]
+for pattern in patterns:
+    matches=re.findall(pattern, text)
+    n_matches=len(matches)
+    print (f"{filename} contains {pattern} {n_matches} times in the article")
+print('--------------------------')
