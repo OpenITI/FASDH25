@@ -17,6 +17,7 @@ import re
 import os
 import pandas as pd
 
+
 # fix this function!
 
 def write_tsv (data, column_list, path):
@@ -35,7 +36,8 @@ def write_tsv (data, column_list, path):
     # write the dataframe to tsv:
     df.to_csv(path, sep="\t", index=False)
 
-
+coordinates_path = "gazetteers/geonames_gaza_selection.tsv"
+coordinates_df = pd.read_csv(coordinates_path, sep="\t")
 
 # define which folder to use:
 # NB: these are different articles than in the previous weeks
@@ -83,3 +85,6 @@ for pattern in patterns:
 columns = ["asciiname", "frequency"]
 tsv_filename = "frequencies.tsv"
 write_tsv(patterns, columns, tsv_filename)
+
+
+
