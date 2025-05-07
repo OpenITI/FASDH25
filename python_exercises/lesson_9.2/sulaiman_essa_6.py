@@ -11,23 +11,40 @@ a repository for data and code for machine learning.
 https://www.kaggle.com/datasets/inaciovieira/al-jazeera-english-israel-gaza-war-from-7th-oct-23
 
 The selection criteria of the subset we are working on today are:
-1. The articles were written from 7 October 2023 onwards
-2. The articles are at least 15Kb in size
+1. The articles were written from 2023 onwards
+2. The articles contain at least 9 place names in Gaza
 
-The goal for today's class is to find out how many times
-place names like Israel, Gaza, and Palestine are mentioned
-in these articles.
 '''
 import re
 import os
 
-# define which folder and filename to use:
-folder = "aljazeera_articles"
+# define which folder to use:
+# NB: these are different articles than in the previous weeks
+folder = "aljazeera_articles"  
 
-patterns = [r"Israeli?", r"Palestine|Palestinian", r"Gazan?"]
-total = 0
+# define the patterns we want to search:
+path = "gazetteers/geonames_gaza_selection.tsv"
+with open(path, encoding="utf-8") as file:
+        
+        data = file.read()
+
+print(data)
+
+
+patterns = {}
+rows = data.split("\n")
+print(rows)
+for row in rows[1:]:
+    columns = row.split("\t")
+    name = columns[0]
+    print(name)
+    patterns[name] = 0
+   
+print(patterns)
+
+
+
 for filename in os.listdir(folder):
-
     # build the file path:
     file_path = f"{folder}/{filename}"
     print(f"The path to the article is: {file_path}")
@@ -36,13 +53,19 @@ for filename in os.listdir(folder):
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
 
-    # find all the occurences of Israel or Israeli in the text:
+    # find all the occurences of the patterns in the text:
     for pattern in patterns:
         matches = re.findall(pattern, text)
         n_matches = len(matches)
-        print(f"{filename} contains {pattern} {n_matches} times in the article")
-        total += n_matches
-        print(f"until now we dound {total} matches")
+        print(n_matches, pattern)
+        patterns[pattern] += n_matches
 
-print(f"Found {total} matches in the whole corpus")
+print(patterns)
 
+for pattern in patterns:
+    print(f"found {pattern} {patterns[pattern]} times")
+    
+        
+        
+        
+        
