@@ -30,13 +30,13 @@ df['year'] = df['year'].astype(str)
 df['month'] = df['month'].astype(str).str.zfill(2)  # Ensure 2 digits
 df['day'] = df['day'].astype(str).str.zfill(2)
 
-# Combine into required format
-df['combined_date'] = df['year'] + '{' + df['year'].str[2:4] + '}-' + df['month'] + '-{' + df['day'] + '}'
-print(df[['year', 'month', 'day', 'combined_date']])
-
 # Step 8: Export articles from first 6 months of 2023
 mask = (df['year'] == '2023') & (df['month'].astype(int) <= 6)
 first6m_df = df[mask]
 
 output_path_6m2023 = r"C:\Users\Admin\Downloads\FASDH25\python_exercises\lesson_13.1\outputs\Zeeshan-Karim-6m2023.csv"
 first6m_df.to_csv(output_path_6m2023, index=False)
+
+print("Articles from Jan to Jun 2023 saved to:")
+print(output_path_6m2023)
+
