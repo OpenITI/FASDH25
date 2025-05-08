@@ -19,22 +19,30 @@ place names like Israel, Gaza, and Palestine are mentioned
 in these articles.
 '''
 import re
+import os
 
 # define which folder and filename to use:
 folder = "aljazeera_articles"
-filename = "2024-03-28_9276.txt"
 
-# build the file path:
-file_path = f"{folder}/{filename}"
-print(f"The path to the article is: {file_path}")
+patterns = [r"Israeli?", r"Palestine|Palestinian", r"Gazan?"]
+total = 0
+for filename in os.listdir(folder):
 
-# load the article (text file) into Python:
-with open(file_path, encoding="utf-8") as file:
-    text = file.read()
+    # build the file path:
+    file_path = f"{folder}/{filename}"
+    print(f"The path to the article is: {file_path}")
 
-# find all the occurences of Israel or Israeli in the text:
-pattern = r"Israeli?"
-matches = re.findall(pattern, text)
-n_matches = len(matches)
-print(f"{filename} contains {pattern} {n_matches} times in the article")
+    # load the article (text file) into Python:
+    with open(file_path, encoding="utf-8") as file:
+        text = file.read()
+
+    # find all the occurences of Israel or Israeli in the text:
+    for pattern in patterns:
+        matches = re.findall(pattern, text)
+        n_matches = len(matches)
+        print(f"{filename} contains {pattern} {n_matches} times in the article")
+        total += n_matches
+        print(f"until now we dound {total} matches")
+
+print(f"Found {total} matches in the whole corpus")
 

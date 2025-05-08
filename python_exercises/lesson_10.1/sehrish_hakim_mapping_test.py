@@ -8,7 +8,7 @@ make the code work
 """
 
 # import the relevant libraries: plotly express and pandas
-pip import plotly.express as px
+import plotly.express as px
 install pandas as pd
 
 

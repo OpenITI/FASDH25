@@ -18,7 +18,7 @@ import os
 
 # fix this function!
 
-define write tsv(data)
+def write tsv(data, column_list, path)
     """This function converts a dictionary to a tsv file.
 
     It takes three arguments:
@@ -32,8 +32,8 @@ define write tsv(data)
     # create a dataframe from the items list (this is correct):
     df = pd.DataFrame.from_records(items, columns=column_list, index=False)
     # write the dataframe to tsv:
-df.to_csv(path, sep="\t")
-break
+    df.to_csv(path, sep="\t")
+    break
 
 
 # define which folder to use:
