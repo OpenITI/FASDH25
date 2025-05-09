@@ -20,10 +20,27 @@ import os
 
 # define which folder to use:
 # NB: these are different articles than in the previous weeks
-folder = "aljazeera_articles"  
+folder = "aljazeera_articles"
+
 
 # define the patterns we want to search:
-patterns = {r"Israeli?": 0, r"Palestine|Palestinian": 0, r"Gazan?": 0}
+path = "gazetteers/geonames_gaza_selection.tsv"
+with open(path, encoding="utf-8") as file:
+    data = file.read()
+
+print(data)
+
+patterns = {}
+rows = data.split("\n")
+print(rows)
+for row in rows:
+    columns = row.split("\t")
+    name = columns[0]
+    print(name)
+    patterns[name] = 0
+
+print(patterns)
+
 
 for filename in os.listdir(folder):
     # build the file path:
@@ -44,6 +61,8 @@ for filename in os.listdir(folder):
 print(patterns)
 
 for pattern in patterns:
-    print(f"found {pattern} {patterns[pattern]} times")
+    count = patterns[pattern]
+    if count >= 1:
+        print(f"found {pattern} {count} times")
 
         
