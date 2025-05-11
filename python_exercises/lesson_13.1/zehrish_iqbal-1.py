@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 # reads the csv file
 df=pd.read_csv("data/title.csv")
 
