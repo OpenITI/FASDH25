@@ -1,24 +1,9 @@
-'''This is your starting script for today's Python class.
-
-This script contains the code we wrote last week
-to count the number of times each place in Gaza
-is mentioned in our corpus.
-
-Now, we want to store this count into a tsv file.
-
-I have written a function (write csv) to do this -
-but it has some mistakes in it.
-
-Please fix the mistakes and call the function
-to write the 
-
-'''
 import re
 import os
+import pandas as pd
 
 # fix this function!
-
-define write tsv(data)
+def write_tsv(data, column_list, path):
     """This function converts a dictionary to a tsv file.
 
     It takes three arguments:
@@ -26,21 +11,16 @@ define write tsv(data)
         column_list (list): a list of column names
         path (str): the path to which the tsv file will be written
     """
-    import pandas as pd
-    # turn the dictionary into a list of (key, value) tuples (this is correct):
+    # turn the dictionary into a list of (key, value) tuples:
     items = list(data.items())
-    # create a dataframe from the items list (this is correct):
-    df = pd.DataFrame.from_records(items, columns=column_list, index=False)
+    # create a dataframe from the items list:
+    df = pd.DataFrame.from_records(items, columns=column_list)
     # write the dataframe to tsv:
-df.to_csv(path, sep="\t")
-break
+    df.to_csv(path, sep="\t", index=False)
 
 
 # define which folder to use:
-# NB: these are different articles than in the previous weeks
-folder = "aljazeera_articles"  
-
-# define the patterns we want to search:
+folder = "aljazeera_articles"
 
 # load the gazetteer from the tsv file:
 path = "gazetteers/geonames_gaza_selection.tsv"
@@ -51,25 +31,21 @@ with open(path, encoding="utf-8") as file:
 patterns = {}
 rows = data.split("\n")
 for row in rows[1:]:
+    if row.strip() == "":
+        continue
     columns = row.split("\t")
     name = columns[0]
     patterns[name] = 0
 
 # count the number of times each pattern is found in the entire folder:
 for filename in os.listdir(folder):
-    # build the file path:
     file_path = f"{folder}/{filename}"
-    #print(f"The path to the article is: {file_path}")
-
-    # load the article (text file) into Python:
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
 
-    # find all the occurences of the patterns in the text:
     for pattern in patterns:
         matches = re.findall(pattern, text)
         n_matches = len(matches)
-        # add the number of times it was found to the total frequency:
         patterns[pattern] += n_matches
 
 # print the frequency of each pattern:
@@ -81,3 +57,4 @@ for pattern in patterns:
 # call the function to write your tsv file:
 columns = ["asciiname", "frequency"]
 tsv_filename = "frequencies.tsv"
+write_tsv(patterns, columns, tsv_filename)
