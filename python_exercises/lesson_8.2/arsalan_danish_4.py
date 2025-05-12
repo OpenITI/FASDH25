@@ -25,7 +25,7 @@ import os
 folder = "aljazeera_articles"
 filename = "2024-03-28_9276.txt"
 
-
+/
 patterns = [r"Israel\b", r"Palestine|Palestinian", r"Gazan?"]
 
 total = [0,0,0]
