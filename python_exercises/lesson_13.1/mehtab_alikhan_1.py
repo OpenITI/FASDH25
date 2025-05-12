@@ -36,4 +36,4 @@ print(df['date'])
 first_half_2023 = df[(df['year'] == 2023) & (df['month'] <= 6)]
 
 # Save to CSV
-first_half_2023.to_csv('mehtab-alikhan-6m2023.csv', index=False)
+first_half_2023.to_csv('outputs/mehtab-alikhan-6m2023.csv', index=False)
