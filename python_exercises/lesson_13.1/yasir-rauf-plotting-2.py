@@ -36,7 +36,7 @@ fig2 = px.histogram(
 # Barspacing
 fig2.update_layout(bargap=0.2)
 
-# add annotation for fig2 above the bars in the graph
+# add annotation for fig2 
 fig2.add_annotation(
     x=100, 
     y=50,   
@@ -71,7 +71,7 @@ fig3 = px.histogram(
 # Barspacing
 fig3.update_layout(bargap=0.2)
 
-# Add annotation for fig3 above the bars in the graph
+# Add annotation for fig3
 fig3.add_annotation(
     x=50,  
     y=210,  
