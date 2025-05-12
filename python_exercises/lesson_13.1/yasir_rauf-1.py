@@ -1,6 +1,6 @@
 import pandas as pd
 
-data_path = "../lesson_13.1/data/title.csv"
+data_path = "data/title.csv"
 
 # Read titles.csv as a pandas dataframe
 df = pd.read_csv(data_path)
@@ -32,7 +32,6 @@ top20_df = df.sort_values(by="length", ascending=False).head(20)
 # Export the top 20 articles to a new CSV file
 output_path = "../lesson_13.1/outputs/yasir_rauf_top20.csv"
 top20_df.to_csv(output_path, index=False)
-print(f"The top 20 longest articles have been exported to {output_path}")
 
 print("------") # separation between the tasks
 
@@ -49,7 +48,7 @@ print("------") # separation between the tasks
 filtered_df = df[(df['year'] == 2023) & (df['month'] <= 6)]
 
 # Export the filtered DataFrame to a new CSV file
-output_path = "../lesson_13.1/outputs/yasir_rauf_6m2023.csv"
+output_path = "outputs/yasir_rauf_6m2023.csv"
 filtered_df.to_csv(output_path, index=False)
-print(f"The filtered DataFrame has been saved to {output_path}")
+
 

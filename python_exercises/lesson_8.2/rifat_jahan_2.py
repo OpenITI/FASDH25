@@ -24,6 +24,8 @@ import re
 folder = "aljazeera_articles"
 filename = "2024-03-28_9276.txt"
 
+total = 0
+
 # build the file path:
 file_path = f"{folder}/{filename}"
 print(f"The path to the article is: {file_path}")
@@ -34,8 +36,12 @@ with open(file_path, encoding="utf-8") as file:
 
 # find all the occurences of Israel or Israeli,
 # Palestine or Palestinian, and Gaza or Gazan in the text:
-pattern = r"Israeli?"
-matches = re.findall(pattern, text)
-n_matches = len(matches)
-print(f"{filename} contains {pattern} {n_matches} times in the article")
+pattern = r"Israel?" 
+for pattern in pattern:
+    matches = re.findall(pattern, text)
+    n_matches = len(matches)
+    print(f"{filename} contains {pattern} {n_matches} times in the article")
+    total += n_matches
+
+print(f"we found {total} matches in the corpus!")
 
