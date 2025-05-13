@@ -16,7 +16,7 @@ fig1 = px.histogram(
     title='Histogram of Article Lengths < 300 Words by Year',
     labels={'length': 'Article Length', 'year': 'Year'}
 )
-fig1.write_html("outputs/muhammad-faheem-short-articles-by-year.html")
+fig1.write_html("outputs/anees-murtaza-wali-short-articles-by-year.html")
 
 # 2. Histogram of 2023 and 2024 articles, colored by year
 recent_articles = df[df['year'].isin([2023, 2024])]
@@ -36,7 +36,7 @@ fig2.add_annotation(
     showarrow=True,
     arrowhead=2
 )
-fig2.write_html("outputs/muhammad-faheem-2023-2024-lengths.html")
+fig2.write_html("outputs/anees-murtaza-wali-2023-2024-lengths.html")
 
 # 3. Histogram of 2023 articles in Oct–Dec, colored by month
 end_2023 = df[(df['year'] == 2023) & (df['month'].isin([10, 11, 12]))]
@@ -56,4 +56,4 @@ fig3.add_annotation(
     showarrow=True,
     arrowhead=2
 )
-fig3.write_html("outputs/muhammad-faheem-Q4-2023-lengths.html")
+fig3.write_html("outputs/anees-murtaza-wali-Q4-2023-lengths.html")
