@@ -23,7 +23,7 @@ print("Total length of all articles is", total_length)
 top_20 = df.sort_values(by='length', ascending=False).head(20)
 
 # Export to CSV in the outputs folder
-top_20.to_csv('outputs/sahar-mubeen-top20.csv', index=False)
+top_20.to_csv('outputs/anees-murtaza-wali-top20.csv', index=False)
 
 
 # Convert each part to string and combine them
@@ -36,4 +36,4 @@ print(df['date'])
 first_half_2023 = df[(df['year'] == 2023) & (df['month'] <= 6)]
 
 # Save to CSV
-first_half_2023.to_csv('outputs/sahar-mubeen-6m2023.csv', index=False)
+first_half_2023.to_csv('outputs/anees-murtaza-wali-6m2023.csv', index=False)
