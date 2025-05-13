@@ -30,7 +30,7 @@ print("------") # separation between the tasks
 # Sort the DataFrame by 'length' in descending order and get the top 20 rows
 top20_df = df.sort_values(by="length", ascending=False).head(20)
 # Export the top 20 articles to a new CSV file
-output_path = "../lesson_13.1/outputs/yasir_rauf_top20.csv"
+output_path = "../lesson_13.1/outputs/zainab_murtazaali_top20.csv"
 top20_df.to_csv(output_path, index=False)
 
 print("------") # separation between the tasks
@@ -48,7 +48,7 @@ print("------") # separation between the tasks
 filtered_df = df[(df['year'] == 2023) & (df['month'] <= 6)]
 
 # Export the filtered DataFrame to a new CSV file
-output_path = "outputs/yasir_rauf_6m2023.csv"
+output_path = "outputs/zainab_murtazaali_6m2023.csv"
 filtered_df.to_csv(output_path, index=False)
 
 
