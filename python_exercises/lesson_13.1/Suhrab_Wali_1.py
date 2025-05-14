@@ -1,40 +1,31 @@
+# pull in pandas and load data
 import pandas as pd
 df = pd.read_csv("data/title.csv")
 
-print(df['title'])
+df=pd.read_csv('data/title.csv')
+print(list(df.columns))
 
+#print longest artcile based on length
 
-longest = df['title'].str.len().idxmax()
+max_length = df["length"].max()
+longest_article_title = df[df["length"] == max_length]["title"].values[0]
+print("\nTitle of the Longest Article:")
+print(longest_article_title)
 
-print("Longest title:", df.loc[longest, 'title'])
-total_length = df['title'].str.len().sum()
-print("Total length of all titles:", total_length)
-# Load the CSV file
-df = pd.read_csv("data/title.csv")
+    
+#print sum of all articles
+total_length = df["length"].sum()
+print("\nSum of All Article Lengths:")
+print(total_length)
 
-# Add a new column for title lengths
-df['title_length'] = df['title'].str.len()
+#export 20 articles to csv, took help form ChateGPT
+top20_df = df.sort_values(by="length", ascending=False).head(20)
+top20_df.to_csv("outputs/suhrab-wali-top20.csv", index=False)
 
-# Sort the DataFrame by title length in descending order
-sorted_df = df.sort_values(by='title_length', ascending=False)
+#combine year month and date
+df["date"] = df["year"].astype(str) + "-" + df["month"].astype(str).str.zfill(2) + "-" + df["day"].astype(str).str.zfill(2)
 
-# Select the top 20 longest titles
-top_20 = sorted_df.head(20)
-
-# Export to a new CSV
-top_20.to_csv("data/top_20_longest_titles.csv", index=False)
-
-print("Exported the 20 longest titles to 'data/top_20_longest_titles.csv'")
-
-# Assuming the columns are named 'year', 'month', and 'day'
-df['date'] = df['year'].astype(str) + '-' + df['month'].astype(str).str.zfill(2) + '-' + df['day'].astype(str).str.zfill(2)
-
-# Print the updated DataFrame to check the new 'date' column
-print(df[['year', 'month', 'day', 'date']].head())
-
-# Filter articles written in the first 6 months of 2023
-filtered_articles = df[(df['year'] == 2023) & (df['month'] <= 6)]
-
-# Export the filtered articles to a CSV file
-filtered_articles.to_csv('outputs/suhrab-wali-6m2023.csv', index=False)
+# export articles from first 6 months of 2023
+df_2023_6m = df[(df["year"] == 2023) & (df["month"] <= 6)]
+df_2023_6m.to_csv("outputs/suhrab-wali-6m2023.csv", index=False)
 

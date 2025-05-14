@@ -3,6 +3,10 @@
 
 # make sure people don't re-clone the repo inside itself
 FASDH25/
+FASDH25-portfolio*/
+
+# exclude urdu keyboard folders:
+urdu-paksign-key*/
 
 # exclude xml folders:
 exports/
@@ -23,3 +27,6 @@ mARkdown/programmer/7587_programmer*
 
 # ignore tsv files in the lesson_10.1 folder:
 python_exercises/lesson_10.1/*.tsv
+
+# ignore instructors' files:
+**/instructors*.py

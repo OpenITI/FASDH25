@@ -30,3 +30,4 @@ fig = scatter_map(coordinates, lat="N", lon="E")
 
 # display it in the browser:
 Fig.show
+
