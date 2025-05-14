@@ -1,53 +1,35 @@
 import pandas as pd
 
-# Correcting the file path using raw string (r"") or double backslashes (\\)
-csv_path = r"C:\Users\Hp\Downloads\FASDH25\python_exercises\lesson_13.1\data\title.csv"
+# Load the dataset containing article information
+data = pd.read_csv("data/title.csv")
 
-# Reading the CSV file
-df = pd.read_csv(csv_path)
+# Display all the article titles
+print("List of Article Titles:")
+print(data["title"])
 
-# Printing column names
-print(df.columns)
+# Identify the article with the maximum length
+max_len = data["length"].max()
+longest = data[data["length"] == max_len]
+print("\nTitle of the Longest Article:")
+print(longest["title"].values[0])  # Extract title string
 
+# Calculate the cumulative length of all articles
+total_len = data["length"].sum()
+print("\nCombined Length of All Articles:", total_len)
 
-maximum_length = df['length'].max()
-print("Maximum Value in length:", maximum_length)
+# Extract the top 20 articles with the highest lengths
+top_twenty = data.sort_values(by="length", ascending=False).head(20)
+top_twenty.to_csv("outputs/kamran-abid-top20.csv", index=False)
 
+# Construct a proper date column in the format YYYY-MM-DD
+data["date"] = (
+    data["year"].astype(str) + "-" +
+    data["month"].astype(str).str.zfill(2) + "-" +
+    data["day"].astype(str).str.zfill(2)
+)
 
-# Locating the row with the maximum length
-longest_article_row = df[df['length'] == maximum_length]
+# Filter articles published in the first half of the year 2023 (Jan–Jun)
+first_half = data[(data["year"] == 2023) & (data["month"] <= 6)]
+first_half.to_csv("outputs/kamran-abid-6m2023.csv", index=False)
 
-# Printing the title of the longest article
-print("Title of the Longest Article:", longest_article_row.iloc[0]['title'])
-
-#Sum of all the articles length
-total_length_sum = df['length'].sum()
-print("Sum of length:", total_length_sum)
-
-# Sorting the DataFrame by 'length' in descending order and selecting the top 20 rows
-top_20_longest_articles = df.sort_values(by='length', ascending=False).head(20)
-
-# Defining the output file path
-output_csv_path = r"outputs/kamran-abid-top20.csv"
-
-# Exporting the DataFrame to CSV without the index column
-top_20_longest_articles.to_csv(output_csv_path, index=False)
-
-print(f"The top 20 longest articles have been exported to: {output_csv_path}")
-
-# Creating the new 'date' column in the desired format as strings
-df['date'] = df['year'].astype(str) + '-' + df['month'].astype(str) + '-' + df['day'].astype(str)
-
-# Displaying the DataFrame with the new column
-print(df[['year', 'month', 'day', 'date']].head())
-
-# Filtering the DataFrame for articles written in the first 6 months of 2023
-articles_6m_2023 = df[(df['year'] == 2023) & (df['month'] <= 6)]
-
-# Defining the output CSV file path
-output_csv_path = r"outputs/kamran-abid-6m2023.csv"
-
-# Exporting the filtered DataFrame to CSV without the index column
-articles_6m_2023.to_csv(output_csv_path, index=False)
-
-print(f"CSV file with articles from the first 6 months of 2023 has been saved at: {output_csv_path}")
+print("\nFiltered articles from Jan to Jun 2023 saved to 'kamran-abid-6m2023.csv'.")
