@@ -27,7 +27,7 @@ filtered_df = df.loc[df['1-gram'].apply(lambda x: isinstance(x, str) and x.lower
 df = df.dropna(subset=['1-gram'])
 
 # Print first 40 rows and compare with earlier 40 rows printed before removing stop words to check whether they have been successfully removed
-# from 1-40 I noticed that only "your" was the stop word and it has been removed it means that stop words have been successfully removed in the data
+# from 1-40 I noticed that only "your" was the stop word and it has been removed it means that stop words have been successfully removed from the dataframe
 print("\nAfter removing stop words:")
 print(filtered_df.head(40))
 
