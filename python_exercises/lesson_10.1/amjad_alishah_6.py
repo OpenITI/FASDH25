@@ -18,7 +18,7 @@ import os
 
 # fix this function!
 
-define write tsv(data)
+def write_tsv(data, column_list, path):
     """This function converts a dictionary to a tsv file.
 
     It takes three arguments:
@@ -30,10 +30,10 @@ define write tsv(data)
     # turn the dictionary into a list of (key, value) tuples (this is correct):
     items = list(data.items())
     # create a dataframe from the items list (this is correct):
-    df = pd.DataFrame.from_records(items, columns=column_list, index=False)
+    df = pd.DataFrame.from_records(items, columns=column_list)
     # write the dataframe to tsv:
-df.to_csv(path, sep="\t")
-break
+    df.to_csv(path, sep="\t", index=False)
+
 
 
 # define which folder to use:
@@ -81,3 +81,4 @@ for pattern in patterns:
 # call the function to write your tsv file:
 columns = ["asciiname", "frequency"]
 tsv_filename = "frequencies.tsv"
+write_tsv(patterns, columns, path)
