@@ -1,47 +1,29 @@
-# Import the pandas library
+# Importing necessary libaries
 import pandas as pd
-
-# Define the path to your CSV file
-csv_path = "data/title.csv"
-
-df = pd.read_csv(csv_path)
-
-print(df.head())
-
-#plot histogram with title and new x-axis label
-# length will be out x-axis
 import plotly.express as px
 
-fig = px.histogram(df, x ="length",
-                   title = "Article lengths in the Gaza Corpus",
+# writing down the file path
+data_path = "data/title.csv"
+
+# reading csv as dataframe
+df = pd.read_csv(data_path)
+
+# print the head of the dataframe to check everything loaded correctly (we use df.head())
+print(df.head())
+
+# Creating a histogram from data using the correct column 'length'
+fig = px.histogram(df, x="length",
+                   title= "Analysis of Article Lengths in the Gaza Corpus",
                    color = "year",
-                   labels = {"length": "Length in tokens",
-                             "year": "Year of publication"},
-                   color_discrete_map = {2024: "Lightgreen",
-                                         2022: "Lightblue"})
-                   
-fig.add_annotation (x=150, y=260,
-                    ax=650, ay=290,
-                    axref= "x", ayref= "y",
-                    text = "Second peak",
-                    showarrow = True,
-                    arrowhead = 1,
-                    bgcolor = "white")
+                   labels= {"length": "Length in tokens",
+                            "year": "Year of Publication"},
+                   color_discrete_map = {2024:"LightGreen"})
 
-mean_length = df["length"].mean()
+# Adding tick marks to the x-axis
+fig.update_xaxes(ticks="inside", tickwidth=2)
 
-fig.add_vline(x=mean_length, line_dash="dash")
+# Updating the y-axis label to 'Frequency'
+fig.update_yaxes(title_text="Frequency")
 
-fig.add_annotation(x=mean_length,
-                   y=320,
-                   xshift=50,
-                   showarrow = False,
-                   text = "Mean Length")
-
-fig.update_xaxes(ticks = "inside", tickwidth = 2,
-                 minor_ticks = "inside", minor_tickwidth = 2)
-
-fig.update_yaxes(ticks = "outside", tickwidth = 2,
-                 minor_ticks = "outside", minor_tickwidth= 2)
-
+# Show the output
 fig.show()

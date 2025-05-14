@@ -1,48 +1,76 @@
-
-
-import pandas as pd
+import pandas as pd 
 import plotly.express as px
 
-# Load the data
-csv_path = "data/title.csv"
-df = pd.read_csv(csv_path)
+# reading the csv file
+df=pd.read_csv("data/title.csv")
 
-# Convert 'month' and 'year' to integers (in case they are not)
-df['month'] = df['month'].astype(int)
-df['year'] = df['year'].astype(int)
+# filtering the data for article length shorter than 300
+article_length=df[df["length"] <300]
 
-# 1. Histogram: Articles shorter than 300 words, colored by year
-df_short = df[df['length'] < 300]
+# plotting the histogram
+fig1=px.histogram(article_length,
+    x="length",
+    color="year",
+    nbins=30,  # number of bins in the histogram
+    title="Histogram of Article Lengths (Under 300 Words) by Year"
+)
 
-fig1 = px.histogram(df_short, x="length", color="year",
-                    title="Article Lengths < 300 Words (Colored by Year)",
-                    labels={"length": "Length in tokens", "year": "Year"},
-                    color_discrete_map={2024: "Lightgreen", 2023: "orange", 2022: "Lightblue"})
 
-fig1.add_annotation(x=150, y=50, text="Many short articles around 150 tokens",
-                    showarrow=True, arrowhead=2, bgcolor="white")
-fig1.show()
+fig1.update_layout(bargap=0.2)  # 0 = no gap, 1 = full gap
 
-# 2. Histogram: Articles from 2023 and 2024 only
-df_recent = df[df['year'].isin([2023, 2024])]
+# This will save to html
+fig1.write_html("outputs/zainab_murtazaali-short articles.html")
 
-fig2 = px.histogram(df_recent, x="length", color="year",
-                    title="Article Lengths from 2023 and 2024",
-                    labels={"length": "Length in tokens", "year": "Year"},
-                    color_discrete_map={2024: "Lightgreen", 2023: "orange"})
+# filtering the years 2023 and 2024
+filtered_data=df[df["year"].isin([2023,2024])]
 
-fig2.add_annotation(x=500, y=60, text="Interesting cluster of 2024 articles",
-                    showarrow=True, arrowhead=1, bgcolor="white")
-fig2.show()
+# plotting the histogram
+fig2 = px.histogram(
+    filtered_data,
+    x="length",
+    color="year",
+    nbins=30,
+    title="Histogram for Article Lengths 2023-2024"
+)
 
-# 3. Histogram: Articles from Oct–Dec 2023, colored by month
-df_oct_dec = df[(df['year'] == 2023) & (df['month'].isin([10, 11, 12]))]
 
-fig3 = px.histogram(df_oct_dec, x="length", color="month",
-                    title="Article Lengths from Oct–Dec 2023 (Colored by Month)",
-                    labels={"length": "Length in tokens", "month": "Month"},
-                    color_discrete_sequence=px.colors.qualitative.Set2)
+fig2.update_layout(bargap=0.2)
 
-fig3.add_annotation(x=250, y=40, text="Spike in December articles",
-                    showarrow=True, arrowhead=2, bgcolor="white")
-fig3.show()
+       
+# adding annotation
+fig2.add_annotation(
+    x=100,
+    y=30,  # adjusting this based on your actual data
+    text="2023 had more short articles than 2024",
+    showarrow=False,
+    font=dict(color="purple")
+)
+
+# saving to html
+fig2.write_html("outputs/zainab_murtazaali-2023&2-2024-article length.html")
+
+# fitering the articles from Oct, Nov, Dec of 2023
+filtered_articles= df[(df["year"] == 2023) & (df["month"].isin([10, 11, 12]))]
+
+# plotting the histogram
+fig3=px.histogram(
+    filtered_articles,
+    x="length",
+    color="month",
+    nbins=30,
+    title="Histogram of article length(Oct-Dec 2023)"
+)
+
+fig3.update_layout(bargap=0.2)
+
+# adding annotation
+fig3.add_annotation(
+    x=20,
+    y=15,
+    text="December shows a shift toward shorter articles",
+    showarrow=False,
+    font=dict(color="blue")
+)
+
+# saving to html
+fig3.write_html("outputs/zainab_murtazaali-0ct-Dec, 2023-articles.html")
