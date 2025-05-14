@@ -3,7 +3,7 @@ import plotly.express as px
 
 data_path = "data/1-gram.csv"
 
-# Read titles.csv as a pandas dataframe
+# Read 1-gram.csv as a pandas dataframe
 df = pd.read_csv(data_path)
 
 # Print the first ten rows
