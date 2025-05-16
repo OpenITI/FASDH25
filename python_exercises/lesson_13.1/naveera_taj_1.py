@@ -23,9 +23,6 @@ print("Sum of all article lengths:", total_length)
 # Sort the DataFrame by the 'length' column in descending order and select the top 20
 top_20_articles = df.sort_values(by='length', ascending=False).head(20)
 
-# Export the top 20 articles to a CSV file
-top_20_articles.to_csv('outputs/sarir-ahmad-top20.csv', index=False)
-
 # Assuming the columns are named 'year', 'month', and 'day'
 df['date'] = df['year'].astype(str) + '-' + df['month'].astype(str).str.zfill(2) + '-' + df['day'].astype(str).str.zfill(2)
 
@@ -37,6 +34,13 @@ filtered_articles = df[(df['year'] == 2023) & (df['month'] <= 6)]
 
 # Export the filtered articles to a CSV file
 filtered_articles.to_csv('outputs/naveera-taj-6m2023.csv', index=False)
+
+# Get the top 20 longest articles
+top20_articles = df.sort_values(by="length", ascending=False).head(20)
+
+# Export to CSV
+top20_articles.to_csv("outputs/naveera-taj-top20.csv", index=False)
+
 
 
 
