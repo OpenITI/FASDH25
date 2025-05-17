@@ -21,12 +21,16 @@ df = pd.read_csv(path)
 print("First 10 rows of the dataset:")
 print(df.head(10))
 
+#Combine year and month into a proper date column for time-series plotting 
+
+df["date"] = pd.to_datetime(df[["year", "month"]].assign(day=1))
+
 #Remove stopwords from the 1-gram column
 #This helps us focus on more meaningful content words
 df = df[~df["1-gram"].isin(stop_words)]
 
 #Group by 1-gram to get total frequency across the corpus
-#We're summing across all months to get the overall frequency
+#summing across all months to get the overall frequency
 total_freq = df.groupby("1-gram")["count"].sum().reset_index()
 
 #Sort to find the top 5 most frequent unigrams
@@ -38,19 +42,22 @@ print(top5)
 df2 = df[df["1-gram"].isin(top5["1-gram"])]
 
 #Group the filtered data by month and 1-gram
-df_monthly = df2.groupby(["month", "1-gram"])["count"].sum().reset_index()
+df_monthly = df2.groupby(["date", "1-gram"])["count"].sum().reset_index()
 
 
 # Creating a line plot using Plotly Express
 fig = px.line(
     df_monthly,                  # Data source
-    x="month",                   # X-axis: time
+    x="date",                   # X-axis: time
     y="count",                   # Y-axis: frequency
     color="1-gram",              # Separate lines per unigram
     title="Evolution of Top 5 Unigrams in News Corpus",  # Title of the chart
     labels={"count": "Frequency", "month": "Time"},      # Axis labels
     markers=True                 # Adds markers to each point on the line
 )
+
+#Save the graph as html file
+fig.write_html("top5_unigrams_trend.html")
 
 #Display the graph 
 fig.show()
