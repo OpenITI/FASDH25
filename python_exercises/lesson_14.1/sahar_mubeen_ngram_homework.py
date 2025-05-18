@@ -23,14 +23,15 @@ custom_stopwords = {
 }
 
 # Keep only rows where '1-gram' is a stopword
-df_stopwords = df[df['1-gram'].isin(custom_stopwords)]
+df = df[~df['1-gram'].isin(custom_stopwords)]
 
 # Find the top 5 most frequent stopwords by total count across all dates
-top_unigrams = df_stopwords.groupby('1-gram')['count'].sum().nlargest(5).index.tolist()
+top_unigrams = df.groupby('1-gram')['count'].sum().nlargest(5).index.tolist()
 print("Top 5 unigrams:", top_unigrams)
 
 # Filter data for these top 5 unigrams only
-df_top5 = df_stopwords[df_stopwords['1-gram'].isin(top_unigrams)].copy()
+df_top5 = df[df['1-gram'].isin(top_unigrams)]
+print(df_top5)
 
 # Create a proper datetime column from year, month, and day columns
 df_top5['date'] = pd.to_datetime(df_top5[['year', 'month', 'day']])
@@ -39,16 +40,20 @@ df_top5['date'] = pd.to_datetime(df_top5[['year', 'month', 'day']])
 df_plot = df_top5.groupby(['date', '1-gram'])['count'].sum().reset_index()
 
 # Aggregate counts monthly by unigram for visualization
-df_monthly = df_top5.groupby(['month', '1-gram'])['count'].sum().reset_index()
+df_top5['year_month'] = pd.to_datetime(df_top5[['year', 'month']].assign(day=1))
+df_monthly = df_top5.groupby(['year_month', '1-gram'])['count'].sum().reset_index()
 
 # Plot the monthly frequency trends of the top 5 stopwords
 fig = px.line(
     df_monthly,
-    x='month',
+    x='year_month',
     y='count',
     color='1-gram',
-    title='Monthly Frequency of Top 5 Stopwords in the Corpus',
-    labels={'count': 'Frequency', 'month': 'Month'},
+    title='Monthly Frequency of Top 5 unigrams in the Corpus',
+    labels={'count': 'Frequency', 'year_month': 'Month'},
     markers=True
 )
 fig.show()
+# saving file
+fig.write_html("sahar_unigram_monthly_trends.html")
+print("the code is complete here")
