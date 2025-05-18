@@ -43,3 +43,5 @@ first_half_2023 = df[
 first_half_2023.to_csv('outputs/Bushra-Hoorani-6m2023.csv', index=False)
 
 
+
+
