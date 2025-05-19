@@ -23,7 +23,7 @@ df2["month_year"] = df2["date"].dt.to_period("M")
 # Group by month and word, and calculate total count for each word per month
 grouped = df2.groupby(["month_year", "1-gram"])["count"].sum().reset_index()
 
-# Convert 'month_year'intoa noraml date format, so that plotly can plot it correctly (datetime format)
+# Convert 'month_year'into a normal date format, so that plotly can plot it correctly (datetime format)
 grouped["month_year"] = grouped["month_year"].dt.to_timestamp()
 
 # Plot a line chart showing how the usage of each word changes overtime
