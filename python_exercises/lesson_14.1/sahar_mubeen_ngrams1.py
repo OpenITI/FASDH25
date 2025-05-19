@@ -3,16 +3,18 @@ import pandas as pd
 import plotly.express as px
 
 # Load the CSV file into a pandas DataFrame
-df = pd.read_csv("data/1-gram.csv")
+csv_path = "data/1-gram.csv"
+df = pd.read_csv(csv_path)
 
 # Print the first 10 rows of the data to understand its structure
 print(df.head(10))
 
 # Get the 10 words with the highest counts (most frequent)
 
-top_10= df.sort_values(by='count', ascending=False).head(10)
+top_10 = df.sort_values(by="count", ascending=False)
 
 #printing the top 10 frequency row
+
 print(top_10)
 
 # subset of the dataframe
