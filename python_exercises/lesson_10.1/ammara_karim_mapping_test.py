@@ -8,13 +8,13 @@ make the code work
 """
 
 # import the relevant libraries: plotly express and pandas
-pip import plotly.express as px
-install pandas as pd
+import plotly.express as px
+import pandas as pd
 
 
 # load the gazetteer tsv file:
 gazetteer_path = gazetteers/geonames_gaza_selection.tsv
-coordinates_df = pd.read_csv(gazetteer_path, delimiter="tab")
+coordinates_df = pd.read_csv(gazetteer_path, sep="\t")
 
 # change some settings to make the dataframe print nicer
 # (no errors in this piece of code):
@@ -26,7 +26,7 @@ pd.set_option("max_colwidth", 15)
 print(coordinates)
 
 # create the map:
-fig = scatter_map(coordinates, lat="N", lon="E")
+fig = scatter_map(coordinatesd_df, lat="N", lon="E")
 
 # display it in the browser:
-Fig.show
+Fig.show()
