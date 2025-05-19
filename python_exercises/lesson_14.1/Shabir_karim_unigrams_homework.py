@@ -1,8 +1,7 @@
 # import necessary libraries
 import pandas as pd
 import nltk
-"""for the following libraries code is adapted with the help of chatgpt
-in order to get rid of making a dictionary for stopwords"""
+
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 import plotly.express as px
