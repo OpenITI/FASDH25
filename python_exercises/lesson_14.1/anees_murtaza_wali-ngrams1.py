@@ -13,10 +13,9 @@ print(top_10)
 
 # Filter the Dataframe to only include relevent n-grams
 filter = df["1-gram"].isin(["peace", "agreement", "truce"])
-print(filter)
 df2 = df[ filter ]
 print(df2)
 
 # Plot the line graph
-fig = px.line(df2, x="month", y="count", color="1-gram")
+fig = px.line(df2, x="month", y="count", color="1-gram", title="Frequency of Terms Over Time")
 fig.show()

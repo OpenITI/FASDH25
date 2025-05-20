@@ -20,7 +20,7 @@ custom_stopwords = {
     'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should', 'now'
 }
 #filter out where the corpus is an English stop word
-df = df[df['1-gram'].isin(custom_stopwords)]
+df = df[~df['1-gram'].isin(custom_stopwords)]
 
 # Group by '1-gram' and sum counts to find the most frequent unigrams globally
 top_unigrams = df.groupby('1-gram')['count'].sum().nlargest(5).index.tolist()
@@ -36,15 +36,20 @@ df_top5['date'] = pd.to_datetime(df_top5[['year', 'month', 'day']])
 df_plot = df_top5.groupby(['date', '1-gram'])['count'].sum().reset_index()
 
 #ploting the evolutoin of these 5 unigrams in the coprus globally
-df_monthly = df_top5.groupby(['month', '1-gram'])['count'].sum().reset_index()
+df_top5['year_month'] = pd.to_datetime(df_top5[['year', 'month']].assign(day=1))
+df_monthly = df_top5.groupby(['year_month', '1-gram'])['count'].sum().reset_index()
+
 fig = px.line(
     df_monthly, 
-    x="month", 
+    x="year_month", 
     y="count", 
     color="1-gram",
     title="Evolution of Top 5 Unigrams in News Corpus",
-    labels={"count": "Frequency", "month": "Time"},
+    labels={"count": "Frequency", "year_month": "Month"},
     markers=True
 )
 fig.show()
+#saving html file
+fig.write_html("kulsoom_zaman_top_5_unigrams_evolution.html")
+
 
