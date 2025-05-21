@@ -22,8 +22,7 @@ df["Topic_Label"] = df[["topic_1", "topic_2", "topic_3", "topic_4"]].agg(", ".jo
 grouped = df.groupby(["Topic_Label", "year"]).size().reset_index(name="Article_Count")
 
 # It first sums total articles per topic across all years. Then, it selects the 5 most frequent topics (those with the highest total counts).
-# Finally, it filters grouped to include
-only those top 5 topics.
+# Finally, it filters grouped to include only those top 5 topics.
 top_topics = grouped.groupby("Topic_Label")["Article_Count"].sum().nlargest(5).index
 grouped = grouped[grouped["Topic_Label"].isin(top_topics)]
 
