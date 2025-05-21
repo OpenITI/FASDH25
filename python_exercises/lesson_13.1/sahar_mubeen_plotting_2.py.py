@@ -43,5 +43,5 @@ fig3.add_annotation(x=400, y=10, text="Noticeable spike", showarrow=True, arrowh
 
 # Save as HTML
 fig3.write_html('outputs/sahar-mubeen-oct-dec-2023.html')
-print("The code is complete here")
+
 
