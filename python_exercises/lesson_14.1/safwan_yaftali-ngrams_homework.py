@@ -48,3 +48,8 @@ fig = px.line(
     markers=True
 )
 fig.show()
+
+# Save plot as HTML file
+fig.write_html("top5_unigrams_evolution.html")
+
+
