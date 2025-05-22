@@ -41,7 +41,7 @@ fig = px.line(
 )
 
 # Save plot to HTML
-fig.write_html("rubica_shah_top_5_unigrams_plot.html")
+fig.write_html("Rubica_Shah_top_5_unigrams_plot.html")
 fig.show()
 
 
