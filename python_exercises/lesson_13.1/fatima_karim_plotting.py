@@ -12,8 +12,7 @@ fig = px.histogram(df, x="length",
 fig.updpate_xaxes(ticks = "inside", tickwidth = 2,
                 minor_ticks= "inse", minor_tickwidth=2)
 
-fig.update_yaxes(ticks = "outside", tickwidth = 2,
-                minor_ticks= "outside", minor_tickwidth=2)
+fig.update_yaxes(titl_txt="frquny"  
 
 fig.show()
 
