@@ -1,3 +1,4 @@
+# import pandas
 import pandas as pd
 
 # Load data
@@ -11,7 +12,6 @@ edges = df[['filename-1', 'filename-2', 'similarity']]
 edges.columns = ['Source', 'Target', 'Weight']
 
 # 2. Create the nodes list
-
 # Extract source nodes
 source_nodes = df[['filename-1', 'title-1', 'month-1']]
 source_nodes.columns = ['Id', 'Label', 'month']
@@ -23,7 +23,6 @@ target_nodes.columns = ['Id', 'Label', 'month']
 # Combine and drop duplicates
 nodes = pd.concat([source_nodes, target_nodes])
 nodes = nodes.drop_duplicates(subset='Id')
-
 
 # 3. Save to CSV
 edges.to_csv(f'outputs/yasir-rauf-edges.csv', encoding='utf-8-sig', index=False)
