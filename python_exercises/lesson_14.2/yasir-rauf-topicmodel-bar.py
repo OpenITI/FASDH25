@@ -28,12 +28,13 @@ grouped = grouped[grouped["Topic_Label"].isin(top_topics)]
 
 # Create the bar chart
 fig = px.bar(grouped,
-             x="year",
+             x = "Topic_Label",
              y="Article_Count",
+             facet_row="year",
              color="Topic_Label",
-             barmode="group",
              labels={"year": "Year", "Article_Count": "Number of Articles", "Topic_Label": "Topic"},
-             title="Article Counts by Year and Topic")
+             title="Article Counts by Year and Topic",
+             hover_data={"Topic_Label": False, "year": False})
 
 # Show the bar chart
 fig.show()
