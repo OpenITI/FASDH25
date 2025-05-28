@@ -28,7 +28,7 @@ print(top_5_df)
 top5_words = top_5_df.index.tolist()
 filter = df["1-gram"].isin(top5_words)
 df2 = df[filter].copy()  # Copying to avoid warning
-print("Filtered DataFrame (top 5 words):")
+print("Filtered DataFrame (top 5 1-words):")
 print(df2.head(10))
 
 # Combine year, month, and day to make a full 'date' column
