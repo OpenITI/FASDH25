@@ -46,11 +46,14 @@ fig = px.bar(grouped,
 
 # Display the bar chart
 
+
+
+
 fig.show()
 
 # Export the bar chart as HTML file
 
-fig.write_html("Bushra_Article_Counts_by_Year_and_Topic.html")
+fig.write_html("Atiqa_Article_Counts_by_Year_and_Topic.html")
 
 
 
