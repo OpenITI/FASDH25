@@ -2,6 +2,9 @@
 import pandas as pd
 import nltk
 
+"""For the following libraries, the code was adapted with the help of ChatGPT
+in order to avoid manually creating a dictionary for stopwords."""
+
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 import plotly.express as px
