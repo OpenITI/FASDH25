@@ -52,7 +52,7 @@ fig = px.line(
 )
 
 # Save plot to HTML
-fig.write_html("samrin_samrin_top_5_unigrams_plot.html")
+fig.write_html("samrin_alam_top_5_unigrams_plot.html")
 fig.show()
 
 
