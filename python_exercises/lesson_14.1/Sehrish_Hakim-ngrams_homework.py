@@ -57,8 +57,7 @@ fig = px.line(
 )
 
 #Save the graph as html file
-fig.write_html("top5_unigrams_trend.html")
+fig.write_html("Sehrish-Hakim-ngrams-homework-plot.html")
 
-#Display the graph 
-fig.show()
+
 
