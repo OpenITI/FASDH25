@@ -36,5 +36,5 @@ fig = px.bar(
     labels={'Topic_Name': 'Topic', 'Count': 'Article Count', 'year': 'Year'}
 )
 #export the image 
-fig.write_html("topic_bar_chart.html")
+fig.write_html("sehrish-hakim-topicmodel-bar.html")
 
