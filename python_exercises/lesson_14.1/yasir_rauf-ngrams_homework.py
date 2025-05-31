@@ -76,3 +76,6 @@ fig = px.line(
 
 # displaying the line plot
 fig.show()
+
+# Saving line plot as html
+fig.write_html("yasir_top_5_unigrams.html")
